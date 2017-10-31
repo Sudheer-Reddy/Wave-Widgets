@@ -1,0 +1,10 @@
+<span class="app-icon-wrapper" 
+  [attr.icon-position]="iconposition"
+  [hidden]="!show"  
+  [ngStyle]="{'opacity':opacity}"
+  [title]="hint">
+    <i class="app-icon"
+      [ngClass]="['app-icon', iconclass]"
+      [ngStyle]="{'font-size':iconsize, 'color': color}"></i>
+  <label class="app-label" [innerHTML]="caption" *ngIf="caption"></label>
+</span>

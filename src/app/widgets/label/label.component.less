@@ -1,0 +1,12 @@
+@app-standard-size: 8;
+@app-label-text-color: #333;
+@app-label-text-hover-color: #666;
+
+.app-label {
+  position: relative;
+  &.required:after {
+    content: "*";
+    color: red;
+    margin-left: unit((@app-standard-size / 4) , px);
+  }
+}
