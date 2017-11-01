@@ -119,7 +119,7 @@ export class AnchorComponent implements OnInit {
     if (this.encodeurl) {
       value = this.encodeUrl(value);
     }
-    if (value.startsWith('www')) {
+    if (value && value.startsWith('www')) {
       value = '//' + value;
     }
     this._hyperlink = value;

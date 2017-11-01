@@ -1,0 +1,79 @@
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Caption</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="caption" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-anchor [caption]="caption" hyperlink="www.google.com"></wm-anchor>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Hyperlink</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="hyperlink" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-anchor caption="link" [hyperlink]="hyperlink"></wm-anchor>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Target</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="target" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-anchor caption="link" hyperlink="www.google.com" [target]="target"></wm-anchor>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Icon</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="iconclass" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-anchor caption="link" hyperlink="www.google.com" [iconclass]="iconclass"></wm-anchor>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

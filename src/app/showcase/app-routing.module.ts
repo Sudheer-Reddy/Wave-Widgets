@@ -6,7 +6,10 @@ import { HomeComponent } from './components/home/home.component';
     imports: [
         RouterModule.forRoot([
             {path: '', component: HomeComponent},
-            {path: 'audio', loadChildren: './components/audio/audio-demo.module#AudioDemoModule'}
+            {path: 'audio', loadChildren: './components/audio/audio-demo.module#AudioDemoModule'},
+            {path: 'button', loadChildren: './components/button/button-demo.module#ButtonDemoModule'},
+            {path: 'anchor', loadChildren: './components/anchor/anchor-demo.module#AnchorDemoModule'},
+            {path: 'icon', loadChildren: './components/icon/icon-demo.module#IconDemoModule'}                                    
         ])
     ],
     exports: [RouterModule]

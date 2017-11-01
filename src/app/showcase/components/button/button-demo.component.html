@@ -1,0 +1,79 @@
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Caption</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="caption" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-button [caption]="caption" class="btn-primary"></wm-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Class</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="class" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-button caption="Button" [class]="class"></wm-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Badge</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="badge" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-button caption="Button" class="btn-primary" [badgevalue]="badge"></wm-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Icon</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="iconclass" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-button caption="Button" class="btn-primary" [iconclass]="iconclass"></wm-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Caption</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="caption" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-icon [caption]="caption" iconclass="glyphicon glyphicon-plus"></wm-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Icon</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="iconclass" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-icon  caption="icon" [iconclass]="iconclass"></wm-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Icon position</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="text" [(ngModel)]="iconposition" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-icon  caption="icon" [iconposition]="iconposition" iconclass="glyphicon glyphicon-plus"></wm-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
