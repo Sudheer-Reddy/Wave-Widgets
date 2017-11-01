@@ -90,6 +90,24 @@ export class ButtonComponent implements OnInit {
      */
 	@Input() class: string = 'btn-default';
 
+	@Input() fontsize: string;
+	@Input() fontunit: string; 
+	@Input() fontfamily: string; 
+	@Input() color: string; 
+	@Input() fontstyle: string; 
+	@Input() textalign: string; 
+	@Input() backgroundcolor: string;
+	@Input() backgroundimage: string = '';
+	@Input() backgroundrepeat: string;
+	@Input() backgroundposition: string;
+	@Input() backgroundsize: string;
+	@Input() backgroundattachment;
+	@Input() bordercolor: string;
+	@Input() borderstyle: string;
+	@Input() borderwidth: string;
+	@Input() padding: string;
+	@Input() margin: string;
+
 	constructor() {
 	}
 
