@@ -1,4 +1,5 @@
-<a data-identifier="anchor" class="app-anchor" 
+<a data-identifier="anchor" 
+  [ngClass]="['app-anchor', class]"
   [title]="hint" role="button" [attr.accesskey]="shortcutkey"
   [target]="target"
   [href]="hyperlink"
@@ -7,7 +8,7 @@
   [hidden]="!show"
   [attr.accesskey]="shortcutkey"
   [attr.icon-position]="iconposition">
-  <img data-identifier="img" class="anchor-image-icon" [src]="iconsrc" *ngIf="iconsrc" 
+  <img data-identifier="img" class="anchor-image-icon" [src]="iconurl" *ngIf="iconurl" 
     [ngStyle]="{width:iconwidth ,height:iconheight, margin:iconmargin}"/>
   <i [ngClass]="['app-icon', iconclass]" [ngStyle]="{width:iconwidth, height:iconheight, margin:iconmargin}" *ngIf="iconclass"></i>
   <span class="anchor-caption" [innerHTML]="caption"></span>

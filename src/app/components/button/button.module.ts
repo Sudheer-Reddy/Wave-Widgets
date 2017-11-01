@@ -2,6 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button.component';
 
+/**
+* The Button module
+*
+* Contains button component
+*/
 @NgModule({
   declarations: [
     ButtonComponent

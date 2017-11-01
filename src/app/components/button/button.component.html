@@ -9,7 +9,7 @@
     [attr.accesskey]="shortcutkey"
     [attr.icon-position]="iconposition"
     >
-    <img class="button-image-icon" [src]="iconsrc" *ngIf="iconsrc"
+    <img class="button-image-icon" [src]="iconurl" *ngIf="iconurl"
       [ngStyle]="{'width':iconwidth, 'height':iconheight, 'margin':iconmargin}"/>
     <i *ngIf="iconclass"
       [ngClass]="['app-icon', iconclass]"
