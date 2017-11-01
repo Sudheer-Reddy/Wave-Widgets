@@ -1,20 +1,20 @@
-<button role="input" 
-    [ngClass]="['btn', 'app-button', class]" 
+<button role="input"
+    [ngClass]="['btn', 'app-button', class]"
     [type]="type"
     [title]="hint"
     [tabindex]="tabindex"
     [ngStyle]="{'width':width, 'height':height}"
     [hidden]="!show"
-    [disabled]="disable"     
+    [disabled]="disable"
     [attr.accesskey]="shortcutkey"
     [attr.icon-position]="iconposition"
     >
-  <img class="button-image-icon" [src]="iconsrc" *ngIf="iconsrc" [ngStyle]="{'width':iconwidth, 'height':iconheight, 'margin':iconmargin}"
-  />
-  <i *ngIf="iconclass"
-    [ngClass]="['app-icon', iconclass]" 
-    [ngStyle]="{'width':iconwidth, 'height':iconheight, 'margin':iconmargin, 'font-size':iconwidth}"
-    ></i>
-  <span class="btn-caption" [textContent]="caption"></span>
-  <span *ngIf="badgevalue" class="badge pull-right" [textContent]="badgevalue"></span>
+    <img class="button-image-icon" [src]="iconsrc" *ngIf="iconsrc"
+      [ngStyle]="{'width':iconwidth, 'height':iconheight, 'margin':iconmargin}"/>
+    <i *ngIf="iconclass"
+      [ngClass]="['app-icon', iconclass]"
+      [ngStyle]="{'width':iconwidth, 'height':iconheight, 'margin':iconmargin, 'font-size':iconwidth}"
+      ></i>
+    <span class="btn-caption" [textContent]="caption"></span>
+    <span *ngIf="badgevalue" class="badge pull-right" [textContent]="badgevalue"></span>
 </button>

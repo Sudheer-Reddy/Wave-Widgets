@@ -42,7 +42,7 @@
                 <p>Picture Widget</p>
             </div>
             <div class="panel-body">
-                 <wm-picture [picturesource]="samplePicUrl" (onClick)="imageClicked($event)" [width]="pictureWidth" [height]="pictureHeight"></wm-picture>
+                 <wm-picture shape="circle" [picturesource]="samplePicUrl" (onClick)="imageClicked($event)" [width]="pictureWidth" [height]="pictureHeight"></wm-picture>
 
                  <h4>Properties</h4>
                  <p class="text-muted property"><span style="padding-right: 20px;">Source</span></p><input [(ngModel)]="samplePicUrl" style="width: 300px;" />
@@ -54,8 +54,8 @@
 
                 <p *ngFor="let data of imageData">{{data}}</p>
             </div>
-        </div>    
-    </div>  
+        </div>
+    </div>
 </div>
 <div class="row clearfix">
     <!-- Button widget Demo -->
@@ -73,7 +73,7 @@
                 <p class="text-muted property"><span style="padding-right: 20px;">Icon class</span></p><input [(ngModel)]="buttonIconClass" />
                 <p class="text-muted property"><span style="padding-right: 20px;">Badge value</span></p><input [(ngModel)]="buttonBadgeValue" />
             </div>
-        </div>    
+        </div>
     </div>
     <!-- Anchor widget Demo -->
     <div class="col-sm-4">
@@ -82,7 +82,7 @@
                 <p>Anchor Widget</p>
             </div>
             <div class="panel-body">
-                <wm-anchor [caption]="anchorCaption" [hyperlink]="anchorLink" [target]="anchorTarget" [iconclass]="anchorIconClass"></wm-anchor>
+                <wm-anchor [attr.caption]="anchorCaption" [hyperlink]="anchorLink" [target]="anchorTarget" [iconclass]="anchorIconClass"></wm-anchor>
 
                 <h4>Properties</h4>
                 <p class="text-muted property"><span style="padding-right: 20px;">Caption</span></p><input [(ngModel)]="anchorCaption" />
@@ -90,7 +90,7 @@
                 <p class="text-muted property"><span style="padding-right: 20px;">Target</span></p><input [(ngModel)]="anchorTarget" />
                 <p class="text-muted property"><span style="padding-right: 20px;">Icon class</span></p><input [(ngModel)]="anchorIconClass" />
             </div>
-        </div> 
+        </div>
     </div>
     <!-- Icon widget Demo -->
     <div class="col-sm-4">
@@ -108,6 +108,6 @@
                 <p class="text-muted property"><span style="padding-right: 20px;">Icon color</span></p><input [(ngModel)]="iconColor" />
                 <p class="text-muted property"><span style="padding-right: 20px;">Icon size</span></p><input [(ngModel)]="iconSize" />
             </div>
-        </div> 
-    </div>   
+        </div>
+    </div>
 </div>

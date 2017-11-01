@@ -1,46 +1,42 @@
-.btn .badge, a .badge {
-    right: -1em;
-    top: -1em;
-    font-weight: normal;
-    z-index: 3;
-    &.btn-link {
-      top: 0;
-      right: 0;
-    }
-  }
   .app-anchor {
-    position: relative;
-    max-width: 100%;
-    cursor: pointer;
-    display: inline-block;
-    //BADGE
-    .anchor-caption {
-      vertical-align: middle;
-      line-height: 1;
-    }
-    .badge {
-      position: absolute;
-      right: 2px;
-    }
-    .app-icon {
-      text-decoration: none;
-    }
-    &:hover, &:focus, .active {
-      .app-icon {
-        text-decoration: none;
+      position: relative;
+      max-width: 100%;
+      cursor: pointer;
+      display: inline-block; //BADGE
+      .anchor-caption {
+          vertical-align: middle;
+          line-height: 1;
       }
-    }
-  }
-
-  /********for buttons, anchors with icon on top****/
-  .btn[icon-position = "top"], a[icon-position = "top"] {
-    height: auto;
-    text-align: center;
-    > .btn-caption, > .anchor-caption {
-      display: block;
-    }
-  }
-  /********for buttons, anchors with icon on right****/
-  .btn[icon-position = "right"], a[icon-position = "right"] {
-    direction: rtl;
+      .badge {
+          position: absolute;
+          right: -1em;
+          top: -1em;
+          font-weight: normal;
+          z-index: 3;
+          &.btn-link {
+              top: 0;
+              right: 0;
+          }
+      }
+      .app-icon {
+          text-decoration: none;
+      }
+      &:hover,
+      &:focus,
+      .active {
+          .app-icon {
+              text-decoration: none;
+          }
+      }
+      &[icon-position="top"] {
+          height: auto;
+          text-align: center;
+          >.btn-caption,
+          >.anchor-caption {
+              display: block;
+          }
+      }
+      &[icon-position="right"] {
+          direction: rtl;
+      }
   }

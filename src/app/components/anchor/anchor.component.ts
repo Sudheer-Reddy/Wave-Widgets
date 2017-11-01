@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './anchor.component.html',
   styleUrls: ['./anchor.component.less']
 })
-export class Anchor implements OnInit {
+export class AnchorComponent implements OnInit {
 
   encodeUrl(url): string {
     return encodeURI(url);

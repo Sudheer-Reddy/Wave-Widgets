@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.less']
 })
-export class Icon implements OnInit {
+export class IconComponent implements OnInit {
 
   @Input() caption: string;
   @Input() name: string;
