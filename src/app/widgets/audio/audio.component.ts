@@ -1,4 +1,4 @@
-import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges, AfterViewInit } from '@angular/core';
+import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from '@angular/core';
 import { BaseWidget } from '../core/basewidget.class';
 import { WidgetTypes } from '../../enums/helpers.enums';
 import { BaseConfig } from '../../services/baseconfig.service';
@@ -10,8 +10,18 @@ import { BaseConfig } from '../../services/baseconfig.service';
     'providers': [BaseConfig]
 })
 
-
-export class Audio extends BaseWidget implements OnChanges, OnInit, AfterViewInit {
+/**
+ * @class Audio.
+ * @typedef Audio Represents a Audio widget with options like loop, mute, mp3format also style with custom classes 
+ * @classdesc Represents a Audio widget with options like loop, mute, mp3format also style with custom classes
+ * @extends BaseWidget
+ * @implements {OnChanges, OnInit}
+ */
+export class Audio extends BaseWidget implements OnChanges, OnInit {
+    /**
+     * Sets title property on widget
+     * @property {string}
+     */
     @Input() hint: string;
     @Input() class: string;
     @Input() hidden: boolean = true;
@@ -25,7 +35,13 @@ export class Audio extends BaseWidget implements OnChanges, OnInit, AfterViewIni
     @Input() width: string;
     @Input() accessroles: string;
     
-    private _selector: string = WidgetTypes[WidgetTypes.audio];
+    /**
+     * Selector for cases where boolean properties needs to be toggled by
+     * manupulating DOM
+     * @private {_selector}
+     * @readonly
+     */
+    private readonly _selector: string = WidgetTypes[WidgetTypes.audio];
 
     private _muted: boolean;
     /**
