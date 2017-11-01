@@ -4,12 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
-import { Label } from './widgets/label/label.component';
-import { Audio } from './widgets/audio/audio.component';
-import { Picture } from './widgets/picture/picture.component';
-import { Anchor } from './widgets/anchor/anchor.component';
-import { Button } from './widgets/button/button.component';
-import { Icon } from './widgets/icon/icon.component';
+import { Label } from '../components/label/label.component';
+import { Audio } from '../components/audio/audio.component';
+import { Picture } from '../components/picture/picture.component';
+import { Anchor } from '../components/anchor/anchor.component';
+import { Button } from '../components/button/button.component';
+import { Icon } from '../components/icon/icon.component';
 
 @NgModule({
   declarations: [

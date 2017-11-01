@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Picture } from './widgets/picture/picture.component';
+import { Picture } from '../components/picture/picture.component';
 
 @Component({
   selector: 'app-root',

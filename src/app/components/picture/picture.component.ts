@@ -1,5 +1,4 @@
 import { Component, Input, Output, OnInit, OnChanges, EventEmitter } from '@angular/core';
-import { PictureAspect, PictureShape, Animation, BackgroundAttachment, Cursor } from '../../enums/helpers.enums';
 
 @Component({
     'selector': 'wm-picture',
@@ -18,10 +17,8 @@ export class Picture implements OnChanges, OnInit {
     @Input() picturesource: string;
     @Input() pictureplaceholder: string;
     @Input() encodeurl: boolean = false;
-    @Input() pictureaspect: PictureAspect = PictureAspect.None;
+    @Input() pictureaspect: string = 'none';
     @Input() disabled: boolean = false;
-    @Input() shape: PictureShape = PictureShape.rounded;
-    @Input() animation: Animation;
     @Input() margin: string;
     @Input() borderwidth: string;
     @Input() borderstyle: string;
@@ -33,8 +30,6 @@ export class Picture implements OnChanges, OnInit {
     @Input() backgroundrepeat: string;
     @Input() backgroundsize: string;
     @Input() backgroundposition: string;
-    @Input() backgroundattachment: BackgroundAttachment;
-    @Input() cursor: Cursor;
 
     @Output() onClick = new EventEmitter();
 

@@ -1,16 +1,12 @@
 import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from '@angular/core';
-import { BaseWidget } from '../core/basewidget.class';
-import { WidgetTypes } from '../../enums/helpers.enums';
-import { BaseConfig } from '../../services/baseconfig.service';
 
 @Component({
     'selector': 'wm-label',
     'templateUrl': './label.component.html',
-    'styleUrls': ['./label.component.less'],
-    'providers': [BaseConfig]
+    'styleUrls': ['./label.component.less']
 })
 
-export class Label extends BaseWidget implements OnChanges, OnInit {
+export class Label implements OnChanges, OnInit {
     @Input() hint: string;
     @Input() caption: string;
     @Input() width: string;
@@ -23,15 +19,7 @@ export class Label extends BaseWidget implements OnChanges, OnInit {
     @Input() wordbreak: string;
     @Input() horizontalalign: string;
 
-    readonly _selector: string = WidgetTypes[WidgetTypes.audio];
-
-    constructor(public _el: ElementRef, private _config: BaseConfig) {
-        super();
-    }
-
-    ngOnInit(): void {
-        this.initWidget(this._config.getDefaultValues('wm.label'));
-    }
+    ngOnInit(): void {}
 
     ngOnChanges(changes: SimpleChanges): void {}
 }

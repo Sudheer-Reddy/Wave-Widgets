@@ -1,13 +1,9 @@
 import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from '@angular/core';
-import { BaseWidget } from '../core/basewidget.class';
-import { WidgetTypes } from '../../enums/helpers.enums';
-import { BaseConfig } from '../../services/baseconfig.service';
 
 @Component({
     'selector': 'wm-audio',
     'templateUrl': './audio.component.html',
-    'styleUrls': ['./audio.component.less'],
-    'providers': [BaseConfig]
+    'styleUrls': ['./audio.component.less']
 })
 
 /**
@@ -17,7 +13,7 @@ import { BaseConfig } from '../../services/baseconfig.service';
  * @extends BaseWidget
  * @implements {OnChanges, OnInit}
  */
-export class Audio extends BaseWidget implements OnChanges, OnInit {
+export class Audio  implements OnChanges, OnInit {
     /**
      * Sets title property on widget
      * @property {string}
@@ -41,7 +37,7 @@ export class Audio extends BaseWidget implements OnChanges, OnInit {
      * @private {_selector}
      * @readonly
      */
-    private readonly _selector: string = WidgetTypes[WidgetTypes.audio];
+    private readonly _selector: string = 'audio';
 
     private _muted: boolean;
     /**
@@ -60,7 +56,7 @@ export class Audio extends BaseWidget implements OnChanges, OnInit {
      */
     @Input('muted') 
     set muted(val: boolean) {
-        this.toggleBooleanProperty('muted', val, this._selector);
+        //this.toggleBooleanProperty('muted', val, this._selector);
         this._muted = val;
     };
 
@@ -80,7 +76,6 @@ export class Audio extends BaseWidget implements OnChanges, OnInit {
      */
     @Input('loop') 
     set loop(val: boolean) {
-        this.toggleBooleanProperty('loop', val, this._selector);
         this._loop = val;
     };
 
@@ -100,7 +95,6 @@ export class Audio extends BaseWidget implements OnChanges, OnInit {
      */
     @Input('controls') 
     set controls(val: boolean) {
-        this.toggleBooleanProperty('controls', val, this._selector);
         this._controls = val;
     };
 
@@ -111,8 +105,7 @@ export class Audio extends BaseWidget implements OnChanges, OnInit {
      * @constructor 
      * @param {ElementRef} el Injection into constructor.
      */
-    constructor(readonly _el: ElementRef, private _config: BaseConfig) {
-        super();
+    constructor(readonly _el: ElementRef) {
     }
 
     /**
@@ -122,9 +115,7 @@ export class Audio extends BaseWidget implements OnChanges, OnInit {
      */
     ngOnChanges(changes: SimpleChanges): void {}
 
-    ngOnInit(): void {
-        this.initWidget(this._config.getDefaultValues('wm.audio') || {});
-    }
+    ngOnInit(): void {}
 
     ngAfterViewInit(): void {}
 }

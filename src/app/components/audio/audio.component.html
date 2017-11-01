@@ -1,5 +1,5 @@
 <div class="app-audio" [attr.alt]="hint" [attr.title]="hint">
-    <audio [attr.src]="mp3format" [ngStyle]="{'width': width, 'height': height}">
+    <audio [attr.src]="mp3format" [muted]="muted" [controls]="controls" [loop]="loop" [ngStyle]="{'width': width, 'height': height}">
         <source type="audio/mp3" [attr.src]="mp3audioUrl">
         {{audiosupportmessage}}
     </audio>
