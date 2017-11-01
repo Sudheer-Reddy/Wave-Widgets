@@ -7,23 +7,24 @@ import { AppComponent } from './app.component';
 import { Label } from '../components/label/label.component';
 import { Audio } from '../components/audio/audio.component';
 import { Picture } from '../components/picture/picture.component';
-import { Anchor } from '../components/anchor/anchor.component';
-import { Button } from '../components/button/button.component';
-import { Icon } from '../components/icon/icon.component';
+
+import { ButtonModule } from '../components/button/button.module';
+import { AnchorModule } from '../components/anchor/anchor.module';
+import { IconModule } from '../components/icon/icon.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     Label,
     Audio,
-    Picture,
-    Button,
-    Icon,
-    Anchor
+    Picture
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ButtonModule,
+    AnchorModule,
+    IconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

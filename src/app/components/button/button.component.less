@@ -1,36 +1,28 @@
   .app-button {
-    position: relative;
-    .btn-caption {
-      margin: 0 0.2em;
-      vertical-align: middle;
-      &:empty {
-        margin: 0;
+      position: relative;
+      .btn-caption {
+          margin: 0 0.2em;
+          vertical-align: middle;
+          &:empty {
+              margin: 0;
+          }
       }
-    }
-    //BADGE
-    .badge {
-      position: absolute;
-      top: 9pt;
-      right: 9pt;
-    }
-  }
-
-  .btn .badge, a .badge {
-    right: -1em;
-    top: -1em;
-    font-weight: normal;
-    z-index: 3;
-  }
-
-    /********for buttons, anchors with icon on top****/
-    .btn[icon-position = "top"], a[icon-position = "top"] {
-      height: auto;
-      text-align: center;
-      > .btn-caption, > .anchor-caption {
-        display: block;
+      .badge {
+          position: absolute;
+          right: -1em;
+          top: -1em;
+          font-weight: normal;
+          z-index: 3;
       }
-    }
-    /********for buttons, anchors with icon on right****/
-    .btn[icon-position = "right"], a[icon-position = "right"] {
-      direction: rtl;
-    }
+      &[icon-position="top"] {
+          height: auto;
+          text-align: center;
+          >.btn-caption,
+          >.anchor-caption {
+              display: block;
+          }
+      }
+      &[icon-position="right"] {
+          direction: rtl;
+      }
+  }
