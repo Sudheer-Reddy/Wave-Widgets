@@ -24,4 +24,13 @@ enum Cursor {
     pointer
 }
 
-export {PictureAspect, Animation, PictureShape, BackgroundAttachment, Cursor}
+enum WidgetTypes {
+    audio,
+    anchor,
+    button,
+    icon,
+    label,
+    picture
+}
+
+export {PictureAspect, Animation, PictureShape, BackgroundAttachment, Cursor, WidgetTypes}

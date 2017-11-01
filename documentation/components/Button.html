@@ -97,13 +97,13 @@
                                     <a href="../components/Audio.html" >Audio</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/Button.html" >Button</a>
+                                    <a href="../components/Button.html"  data-type="entity-link" class="active" >Button</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/Icon.html" >Icon</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/Label.html"  data-type="entity-link" class="active" >Label</a>
+                                    <a href="../components/Label.html" >Label</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/Picture.html" >Picture</a>
@@ -286,13 +286,13 @@
                                            <a href="../components/Audio.html" >Audio</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/Button.html" >Button</a>
+                                           <a href="../components/Button.html"  data-type="entity-link" class="active" >Button</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/Icon.html" >Icon</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/Label.html"  data-type="entity-link" class="active" >Label</a>
+                                           <a href="../components/Label.html" >Label</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/Picture.html" >Picture</a>
@@ -400,7 +400,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>Label</li>
+  <li>Button</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -425,22 +425,15 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/widgets/label/label.component.ts</code>
+    <code>src/app/widgets/button/button.component.ts</code>
 </p>
 
 
-    <p class="comment">
-        <h3>Extends</h3>
-    </p>
-    <p class="comment">
-            <code><a href="../classes/BaseWidget.html" target="_self" >BaseWidget</a></code>
-    </p>
 
     <p class="comment">
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code>OnChanges</code>
                 <code>OnInit</code>
     </p>
 
@@ -459,31 +452,23 @@
 
 
 
-            <tr>
-                <td class="col-md-3">providers</td>
-                <td class="col-md-9">
-                    <code>
-                        BaseConfig
-                    </code>
-                </td>
-            </tr>
 
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>wm-label</code></td>
+                <td class="col-md-9"><code>wm-button</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>label.component.less</code></td>
+                <td class="col-md-9"><code>button.component.less</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./label.component.html</code></td>
+                <td class="col-md-9"><code>./button.component.html</code></td>
             </tr>
 
 
@@ -497,32 +482,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <span class="modifier">Public</span> <a href="#_el">_el</a>
-                            </li>
-                            <li>
-                                <span class="modifier"></span> <a href="#_selector">_selector</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
                         <h6><b>Methods</b></h6>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
-                            <li>
-                                 <a href="#ngOnChanges">ngOnChanges</a>
-                            </li>
                             <li>
                                  <a href="#ngOnInit">ngOnInit</a>
                             </li>
@@ -538,7 +503,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#animation">animation</a>
+                                <a href="#badgevalue">badgevalue</a>
                             </li>
                             <li>
                                 <a href="#caption">caption</a>
@@ -547,28 +512,52 @@
                                 <a href="#class">class</a>
                             </li>
                             <li>
-                                <a href="#height">height</a>
+                                <a href="#disable">disable</a>
                             </li>
                             <li>
-                                <a href="#hidden">hidden</a>
+                                <a href="#height">height</a>
                             </li>
                             <li>
                                 <a href="#hint">hint</a>
                             </li>
                             <li>
-                                <a href="#horizontalalign">horizontalalign</a>
+                                <a href="#iconclass">iconclass</a>
                             </li>
                             <li>
-                                <a href="#required">required</a>
+                                <a href="#iconheight">iconheight</a>
                             </li>
                             <li>
-                                <a href="#whitespace">whitespace</a>
+                                <a href="#iconmargin">iconmargin</a>
+                            </li>
+                            <li>
+                                <a href="#iconposition">iconposition</a>
+                            </li>
+                            <li>
+                                <a href="#iconsrc">iconsrc</a>
+                            </li>
+                            <li>
+                                <a href="#iconurl">iconurl</a>
+                            </li>
+                            <li>
+                                <a href="#iconwidth">iconwidth</a>
+                            </li>
+                            <li>
+                                <a href="#name">name</a>
+                            </li>
+                            <li>
+                                <a href="#shortcutkey">shortcutkey</a>
+                            </li>
+                            <li>
+                                <a href="#show">show</a>
+                            </li>
+                            <li>
+                                <a href="#tabindex">tabindex</a>
+                            </li>
+                            <li>
+                                <a href="#type">type</a>
                             </li>
                             <li>
                                 <a href="#width">width</a>
-                            </li>
-                            <li>
-                                <a href="#wordbreak">wordbreak</a>
                             </li>
                         </ul>
                     </td>
@@ -583,52 +572,15 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <code>constructor(_el: ElementRef, _config: <a href="../injectables/BaseConfig.html">BaseConfig</a>)</code>
+                            <code>constructor()</code>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/widgets/label/label.component.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/widgets/button/button.component.ts:30</a></div>
                                 </td>
                             </tr>
     
-                    <tr>
-                        <td class="col-md-4">
-                                <div>
-                                        <b>Parameters :</b>
-                                        <table class="params">
-                                            <thead>
-                                                <tr>
-                                                    <td>Name</td>
-                                                    <td>Type</td>
-                                                    <td>Optional</td>
-                                                    <td>Description</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                    <tr>
-                                                      <td>_el</td>
-                                                      <td>
-                                                                <code>ElementRef</code>
-                                                      </td>
-                                                      <td>
-                                                      </td>
-                                                      <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                      <td>_config</td>
-                                                      <td>
-                                                                <code><a href="../injectables/BaseConfig.html" target="_self" >BaseConfig</a></code>
-                                                      </td>
-                                                      <td>
-                                                      </td>
-                                                      <td></td>
-                                                    </tr>
-                                            </tbody>
-                                        </table>
-                                </div>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
     </section>
@@ -639,8 +591,8 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
-                            <a name="animation"></a>
-                            <code>animation</code>
+                            <a name="badgevalue"></a>
+                            <code>badgevalue</code>
                         </td>
                         <td class="col-md-10">
                               <p>
@@ -651,7 +603,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/widgets/label/label.component.ts:19</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/widgets/button/button.component.ts:13</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -668,11 +620,14 @@
                                 <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
                               </p>
+                            <p>
+                              <em>Default value: </em><code>Button</code>
+                            </p>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/widgets/label/label.component.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/widgets/button/button.component.ts:11</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -689,11 +644,35 @@
                                 <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
                               </p>
+                            <p>
+                              <em>Default value: </em><code>btn-default</code>
+                            </p>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/widgets/label/label.component.ts:20</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/widgets/button/button.component.ts:30</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="disable"></a>
+                            <code>disable</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/widgets/button/button.component.ts:17</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -714,31 +693,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/widgets/label/label.component.ts:17</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <a name="hidden"></a>
-                            <code>hidden</code>
-                        </td>
-                        <td class="col-md-10">
-                              <p>
-                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-
-                              </p>
-                            <p>
-                              <em>Default value: </em><code>true</code>
-                            </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/widgets/label/label.component.ts:21</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/widgets/button/button.component.ts:20</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -759,7 +714,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/widgets/label/label.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/widgets/button/button.component.ts:14</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -768,8 +723,8 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
-                            <a name="horizontalalign"></a>
-                            <code>horizontalalign</code>
+                            <a name="iconclass"></a>
+                            <code>iconclass</code>
                         </td>
                         <td class="col-md-10">
                               <p>
@@ -780,7 +735,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/widgets/label/label.component.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/widgets/button/button.component.ts:22</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -789,19 +744,193 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
-                            <a name="required"></a>
-                            <code>required</code>
+                            <a name="iconheight"></a>
+                            <code>iconheight</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/widgets/button/button.component.ts:26</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="iconmargin"></a>
+                            <code>iconmargin</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/widgets/button/button.component.ts:27</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="iconposition"></a>
+                            <code>iconposition</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                            <p>
+                              <em>Default value: </em><code>left</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/widgets/button/button.component.ts:28</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="iconsrc"></a>
+                            <code>iconsrc</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/widgets/button/button.component.ts:23</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="iconurl"></a>
+                            <code>iconurl</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/widgets/button/button.component.ts:24</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="iconwidth"></a>
+                            <code>iconwidth</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/widgets/button/button.component.ts:25</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="name"></a>
+                            <code>name</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/widgets/button/button.component.ts:10</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="shortcutkey"></a>
+                            <code>shortcutkey</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/widgets/button/button.component.ts:18</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="show"></a>
+                            <code>show</code>
                         </td>
                         <td class="col-md-10">
                               <p>
                                 <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
 
                               </p>
+                            <p>
+                              <em>Default value: </em><code>true</code>
+                            </p>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/widgets/label/label.component.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/widgets/button/button.component.ts:16</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -810,8 +939,8 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
-                            <a name="whitespace"></a>
-                            <code>whitespace</code>
+                            <a name="tabindex"></a>
+                            <code>tabindex</code>
                         </td>
                         <td class="col-md-10">
                               <p>
@@ -822,7 +951,31 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/widgets/label/label.component.ts:22</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/widgets/button/button.component.ts:15</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="type"></a>
+                            <code>type</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                            <p>
+                              <em>Default value: </em><code>button</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/widgets/button/button.component.ts:12</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -843,28 +996,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/widgets/label/label.component.ts:16</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <a name="wordbreak"></a>
-                            <code>wordbreak</code>
-                        </td>
-                        <td class="col-md-10">
-                              <p>
-                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/widgets/label/label.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/widgets/button/button.component.ts:19</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -883,67 +1015,6 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <a name="ngOnChanges"></a>
-                            <span class="name"><b> ngOnChanges</b><a href="#ngOnChanges"><span class="fa fa-link"></span></a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-    <code>ngOnChanges(changes: SimpleChanges)</code>
-                        </td>
-                    </tr>
-    
-    
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/widgets/label/label.component.ts:36</a></div>
-                                </td>
-                            </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                        <b>Parameters :</b>
-                                        <table class="params">
-                                            <thead>
-                                                <tr>
-                                                    <td>Name</td>
-                                                    <td>Type</td>
-                                                    <td>Optional</td>
-                                                    <td>Description</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                    <tr>
-                                                      <td>changes</td>
-                                                      <td>
-                                                              <code>SimpleChanges</code>
-                                                      </td>
-                                                      <td>
-                                                      </td>
-                                                      <td></td>
-                                                    </tr>
-                                            </tbody>
-                                        </table>
-                                </div>
-                                <div>
-                                </div>
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-    
-                                </div>
-                                    <div class="io-description">
-                                        
-                                    </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
                             <a name="ngOnInit"></a>
                             <span class="name"><b> ngOnInit</b><a href="#ngOnInit"><span class="fa fa-link"></span></a></span>
                         </td>
@@ -957,7 +1028,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/widgets/label/label.component.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/widgets/button/button.component.ts:34</a></div>
                                 </td>
                             </tr>
     
@@ -974,116 +1045,72 @@
             </table>
     </section>
 
-    <section>
-        
-            <h3 id="inputs">
-                Properties
-            </h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <a name="_el"></a>
-                            <span class="name"><b><span class="modifier">Public</span> _el</b><a href="#_el"><span class="fa fa-link"></span></a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span><code>_el:     <code>ElementRef</code>
-    </code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Type : </i>    <code>ElementRef</code>
-    
-                            </td>
-                        </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/widgets/label/label.component.ts:28</a></div>
-                                </td>
-                            </tr>
-    
-    
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <a name="_selector"></a>
-                            <span class="name"><b><span class="modifier"></span> _selector</b><a href="#_selector"><span class="fa fa-link"></span></a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span><code>_selector:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-    </code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-    
-                            </td>
-                        </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/widgets/label/label.component.ts:26</a></div>
-                                </td>
-                            </tr>
-    
-    
-                </tbody>
-            </table>
-    </section>
 
 </div>
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from &#x27;@angular/core&#x27;;
-import { BaseWidget } from &#x27;../core/basewidget.class&#x27;;
-import { WidgetTypes } from &#x27;../../enums/helpers.enums&#x27;;
-import { BaseConfig } from &#x27;../../services/baseconfig.service&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Component, OnInit, Input, Output, EventEmitter } from &#x27;@angular/core&#x27;;
 
 @Component({
-    &#x27;selector&#x27;: &#x27;wm-label&#x27;,
-    &#x27;templateUrl&#x27;: &#x27;./label.component.html&#x27;,
-    &#x27;styleUrls&#x27;: [&#x27;./label.component.less&#x27;],
-    &#x27;providers&#x27;: [BaseConfig]
+  selector: &#x27;wm-button&#x27;,
+  templateUrl: &#x27;./button.component.html&#x27;,
+  styleUrls: [&#x27;./button.component.less&#x27;]
 })
+export class Button implements OnInit {
 
-export class Label extends BaseWidget implements OnChanges, OnInit {
-    @Input() hint: string;
-    @Input() caption: string;
-    @Input() width: string;
-    @Input() height: string;
-    @Input() required: boolean;
-    @Input() animation: string;
-    @Input() class: string;
-    @Input() hidden: boolean &#x3D; true;
-    @Input() whitespace: string;
-    @Input() wordbreak: string;
-    @Input() horizontalalign: string;
+  @Input() name:string;  
+  @Input() caption:string &#x3D; &#x27;Button&#x27;;  
+  @Input() type:string &#x3D; &#x27;button&#x27;;  
+  @Input() badgevalue:string;  
+	@Input() hint:string &#x3D; &#x27;&#x27;;
+	@Input() tabindex:string;	
+	@Input() show:boolean &#x3D; true;
+	@Input() disable:boolean;
+	@Input() shortcutkey:string;	
+	@Input() width:string;
+	@Input() height:string;
+	//@Input() animation;
+	@Input() iconclass:string;
+	@Input() iconsrc:string;	
+	@Input() iconurl:string;
+	@Input() iconwidth:string;
+	@Input() iconheight:string;
+	@Input() iconmargin:string;
+	@Input() iconposition:string &#x3D; &#x27;left&#x27;;
 
-    readonly _selector: string &#x3D; WidgetTypes[WidgetTypes.audio];
+	@Input() class:string &#x3D; &#x27;btn-default&#x27;;
 
-    constructor(public _el: ElementRef, private _config: BaseConfig) {
-        super();
-    }
+  constructor() { }
 
-    ngOnInit(): void {
-        this.initWidget(this._config.getDefaultValues(&#x27;wm.label&#x27;));
-    }
+  ngOnInit() {
+  }
 
-    ngOnChanges(changes: SimpleChanges): void {}
-}</code></pre>
+}
+</code></pre>
     </div>
 
     <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;label [ngStyle]&#x3D;&quot;{&#x27;width&#x27;: width, &#x27;height&#x27;: height}&quot; [ngClass]&#x3D;&quot;[&#x27;app-label&#x27;, class]&quot; [hidden]&#x3D;&quot;hidden&quot;&gt;{{caption}}&lt;/label&gt;</code></pre>
+        <pre class="line-numbers"><code class="language-html">&lt;button role&#x3D;&quot;input&quot; 
+    [ngClass]&#x3D;&quot;[&#x27;btn&#x27;, &#x27;app-button&#x27;, class]&quot; 
+    [type]&#x3D;&quot;type&quot;
+    [title]&#x3D;&quot;hint&quot;
+    [tabindex]&#x3D;&quot;tabindex&quot;
+    [ngStyle]&#x3D;&quot;{&#x27;width&#x27;:width, &#x27;height&#x27;:height}&quot;
+    [hidden]&#x3D;&quot;!show&quot;
+    [disabled]&#x3D;&quot;disable&quot;     
+    [attr.accesskey]&#x3D;&quot;shortcutkey&quot;
+    [attr.icon-position]&#x3D;&quot;iconposition&quot;
+    &gt;
+  &lt;img class&#x3D;&quot;button-image-icon&quot; [src]&#x3D;&quot;iconsrc&quot; *ngIf&#x3D;&quot;iconsrc&quot; [ngStyle]&#x3D;&quot;{&#x27;width&#x27;:iconwidth, &#x27;height&#x27;:iconheight, &#x27;margin&#x27;:iconmargin}&quot;
+  /&gt;
+  &lt;i *ngIf&#x3D;&quot;iconclass&quot;
+    [ngClass]&#x3D;&quot;[&#x27;app-icon&#x27;, iconclass]&quot; 
+    [ngStyle]&#x3D;&quot;{&#x27;width&#x27;:iconwidth, &#x27;height&#x27;:iconheight, &#x27;margin&#x27;:iconmargin, &#x27;font-size&#x27;:iconwidth}&quot;
+    &gt;&lt;/i&gt;
+  &lt;span class&#x3D;&quot;btn-caption&quot; [textContent]&#x3D;&quot;caption&quot;&gt;&lt;/span&gt;
+  &lt;span *ngIf&#x3D;&quot;badgevalue&quot; class&#x3D;&quot;badge pull-right&quot; [textContent]&#x3D;&quot;badgevalue&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade" id="tree">
@@ -1109,10 +1136,10 @@ export class Label extends BaseWidget implements OnChanges, OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><label [ngStyle]="{\'width\': width, \'height\': height}" [ngClass]="[\'app-label\', class]" [hidden]="hidden">{{caption}}</label></div>'
+        var COMPONENT_TEMPLATE = '<div><button role="input"     [ngClass]="[\'btn\', \'app-button\', class]"     [type]="type"    [title]="hint"    [tabindex]="tabindex"    [ngStyle]="{\'width\':width, \'height\':height}"    [hidden]="!show"    [disabled]="disable"         [attr.accesskey]="shortcutkey"    [attr.icon-position]="iconposition"    >  <img class="button-image-icon" [src]="iconsrc" *ngIf="iconsrc" [ngStyle]="{\'width\':iconwidth, \'height\':iconheight, \'margin\':iconmargin}"  />  <i *ngIf="iconclass"    [ngClass]="[\'app-icon\', iconclass]"     [ngStyle]="{\'width\':iconwidth, \'height\':iconheight, \'margin\':iconmargin, \'font-size\':iconwidth}"    ></i>  <span class="btn-caption" [textContent]="caption"></span>  <span *ngIf="badgevalue" class="badge pull-right" [textContent]="badgevalue"></span></button></div>'
     var COMPONENTS = [{'name': 'Anchor', 'selector': 'wm-anchor'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'Audio', 'selector': 'wm-audio'},{'name': 'Button', 'selector': 'wm-button'},{'name': 'Icon', 'selector': 'wm-icon'},{'name': 'Label', 'selector': 'wm-label'},{'name': 'Picture', 'selector': 'wm-picture'}];
     var DIRECTIVES = [{'name': 'InitWidget', 'selector': '[initWidget]'}];
-    var ACTUAL_COMPONENT = {'name': 'Label'};
+    var ACTUAL_COMPONENT = {'name': 'Button'};
 </script>
 <script src="../js/tree.js"></script>
 

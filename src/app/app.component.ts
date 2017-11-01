@@ -21,7 +21,7 @@ export class AppComponent {
   audioUrl: string = 'https://www.w3schools.com/html/horse.mp3';
   audioWidth: string = '300px';
   audioHeight: string = '30px';
-  muteAudio: boolean = true;
+  muteAudio: boolean;
 
   samplePicUrl: string = 'https://angular.io/assets/images/logos/angular/angular.svg';
   pictureWidth: string = '100px';

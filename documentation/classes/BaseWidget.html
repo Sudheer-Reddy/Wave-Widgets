@@ -47,6 +47,12 @@
                                 <li class="link">
                                   <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
+                                <li class="link">
+                                        <a href="../license.html"
+                                    >
+                                        <span class="fa fa-file-text-o"></span>LICENSE
+                                    </a>
+                                </li>
                         </ul>
                     </li>
             
@@ -82,10 +88,19 @@
                                 id="xs-components-links"
                             >
                                 <li class="link">
+                                    <a href="../components/Anchor.html" >Anchor</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/AppComponent.html" >AppComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/Audio.html" >Audio</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Button.html" >Button</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Icon.html" >Icon</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/Label.html" >Label</a>
@@ -130,12 +145,25 @@
                                 <li class="link">
                                     <a href="../classes/BaseWidget.html"  data-type="entity-link" class="active" >BaseWidget</a>
                                 </li>
-                                <li class="link">
-                                    <a href="../classes/BooleanProperty.html" >BooleanProperty</a>
-                                </li>
                         </ul>
                     </li>
             
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/BaseConfig.html" >BaseConfig</a>
+                                </li>
+                        </ul>
+                    </li>
             
             
             
@@ -208,6 +236,12 @@
                                        <li class="link">
                                          <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
+                                       <li class="link">
+                                               <a href="../license.html"
+                                           >
+                                               <span class="fa fa-file-text-o"></span>LICENSE
+                                           </a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -243,10 +277,19 @@
                                        id="components-links"
                    >
                                        <li class="link">
+                                           <a href="../components/Anchor.html" >Anchor</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/AppComponent.html" >AppComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/Audio.html" >Audio</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Button.html" >Button</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Icon.html" >Icon</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/Label.html" >Label</a>
@@ -291,12 +334,25 @@
                                        <li class="link">
                                            <a href="../classes/BaseWidget.html"  data-type="entity-link" class="active" >BaseWidget</a>
                                        </li>
-                                       <li class="link">
-                                           <a href="../classes/BooleanProperty.html" >BooleanProperty</a>
-                                       </li>
                                </ul>
                            </li>
                    
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/BaseConfig.html" >BaseConfig</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                    
                    
@@ -373,13 +429,6 @@
 
 
 
-            <p class="comment">
-                <h3>Implements</h3>
-            </p>
-            <p class="comment">
-                        <code>OnInit</code>
-                        <code>OnChanges</code>
-            </p>
 
 
             <section>
@@ -395,7 +444,7 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                        <span class="modifier">Private</span> <a href="#_el">_el</a>
+                                        <span class="modifier"></span> <a href="#_el">_el</a>
                                     </li>
                                 </ul>
                             </td>
@@ -409,13 +458,10 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                         <a href="#_onChanges">_onChanges</a>
+                                         <a href="#initWidget">initWidget</a>
                                     </li>
                                     <li>
-                                         <a href="#ngOnChanges">ngOnChanges</a>
-                                    </li>
-                                    <li>
-                                         <a href="#ngOnInit">ngOnInit</a>
+                                         <a href="#toggleBooleanProperty">toggleBooleanProperty</a>
                                     </li>
                                 </ul>
                             </td>
@@ -424,52 +470,6 @@
                 </table>
             </section>
 
-            <section>
-                <h3 id="constructor">Constructor</h3>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <code>constructor(el: ElementRef)</code>
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/app/widgets/core/basewidget.class.ts:5</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div>
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                            <td>Type</td>
-                                                            <td>Optional</td>
-                                                            <td>Description</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                              <td>el</td>
-                                                              <td>
-                                                                        <code>ElementRef</code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td></td>
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </section>
 
             <section>
                 
@@ -480,20 +480,20 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <a name="_onChanges"></a>
-                                    <span class="name"><b> _onChanges</b><a href="#_onChanges"><span class="fa fa-link"></span></a></span>
+                                    <a name="initWidget"></a>
+                                    <span class="name"><b> initWidget</b><a href="#initWidget"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-            <code>_onChanges(change: )</code>
+            <code>initWidget(propertiesConfig: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank">object</a>)</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/widgets/core/basewidget.class.ts:13</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/widgets/core/basewidget.class.ts:30</a></div>
                                         </td>
                                     </tr>
             
@@ -513,8 +513,9 @@
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                              <td>change</td>
+                                                              <td>propertiesConfig</td>
                                                               <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
@@ -540,25 +541,28 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <a name="ngOnChanges"></a>
-                                    <span class="name"><b> ngOnChanges</b><a href="#ngOnChanges"><span class="fa fa-link"></span></a></span>
+                                    <a name="toggleBooleanProperty"></a>
+                                    <span class="name"><b> toggleBooleanProperty</b><a href="#toggleBooleanProperty"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-            <code>ngOnChanges(changes: )</code>
+            <code>toggleBooleanProperty(propertyName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, propertyVal: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/widgets/core/basewidget.class.ts:15</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/widgets/core/basewidget.class.ts:18</a></div>
                                         </td>
                                     </tr>
             
                             <tr>
                                 <td class="col-md-4">
+                                        <div class="io-description"><p>Triggers whenever there is a change in boolean property
+            Note to toggle boolean property the child component must define _selector property</p>
+            </div>
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
@@ -573,12 +577,24 @@
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                              <td>changes</td>
+                                                              <td>propertyName</td>
                                                               <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
-                                                              <td></td>
+                                                              <td><p>Name of the property.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>propertyVal</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>Value of supplied boolean property.</p>
+            </td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -592,38 +608,6 @@
                                             <div class="io-description">
                                                 
                                             </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="ngOnInit"></a>
-                                    <span class="name"><b> ngOnInit</b><a href="#ngOnInit"><span class="fa fa-link"></span></a></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-            <code>ngOnInit()</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/widgets/core/basewidget.class.ts:11</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-            
-                                        </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -641,12 +625,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="_el"></a>
-                                    <span class="name"><b><span class="modifier">Private</span> _el</b><a href="#_el"><span class="fa fa-link"></span></a></span>
+                                    <span class="name"><b><span class="modifier"></span> _el</b><a href="#_el"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-lock"></span><code>_el:     <code>ElementRef</code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>_el:     <code>ElementRef</code>
             </code>
                                 </td>
                             </tr>
@@ -658,10 +642,16 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/app/widgets/core/basewidget.class.ts:5</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/widgets/core/basewidget.class.ts:9</a></div>
                                         </td>
                                     </tr>
             
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Reference of the component selector</p>
+            </div>
+                                </td>
+                            </tr>
             
                         </tbody>
                     </table>
@@ -671,37 +661,45 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Input, Output, ElementRef, OnChanges, OnInit } from &quot;@angular/core&quot;;
+        <pre class="line-numbers"><code class="language-typescript">import { ElementRef } from &quot;@angular/core&quot;;
 
-export class BaseWidget implements OnInit, OnChanges {
-    @Input() class;
-    private _el: ElementRef;
+export abstract class BaseWidget {
+    
+    /**
+     * Reference of the component selector
+     * @property {ElementRef} _el
+     */
+    abstract readonly _el: ElementRef;
 
-    constructor (el: ElementRef) {
-        this._el &#x3D; el;
+    /**
+     * Triggers whenever there is a change in boolean property
+     * Note to toggle boolean property the child component must define _selector property
+     * @function toggleProperty
+     * @param {string} propertyName  Name of the property.
+     * @param {boolean} propertyVal Value of supplied boolean property.
+     */
+    toggleBooleanProperty(propertyName: string, propertyVal: boolean): void {
+        let $el &#x3D; this._el.nativeElement.querySelector(this[&#x27;_selector&#x27;]);
+
+        if ($el) {
+            $el[propertyName] &#x3D; propertyVal;
+        }
     }
 
-    ngOnInit() {}
+    /**
+     * @function initWidget Initialization of widget happens here.
+     * @param {object} config Properties config of wiget.
+     */
+    initWidget(propertiesConfig: object) {
 
-    _onChanges(change) {};
-
-    ngOnChanges(changes) {
-        /* if (changes.class) {
-            let prevVal: string  &#x3D; changes.class.previousValue,
-                newVal: string   &#x3D; changes.class.currentValue,
-                classExp: string &#x3D; this._el.nativeElement.getAttribute(&#x27;class&#x27;);
-
-
-            if (prevVal) {
-                let regExp: RegExp &#x3D; new RegExp(prevVal);
-                newVal &#x3D; classExp.replace(regExp, newVal);
-
-                console.log(newVal);
-            } else {
-                this._el.nativeElement.setAttribute(&#x27;class&#x27;, (classExp ? (classExp + &#x27; &#x27;) : &#x27;&#x27;) + this.class)
+        //Assign defualt values from config to component properties
+        Object.getOwnPropertyNames(propertiesConfig)
+        .map((key) &#x3D;&gt; {
+            let val &#x3D; propertiesConfig[key].value;
+            if (this[key] &#x3D;&#x3D;&#x3D; undefined &amp;&amp; val) {
+                this[key] &#x3D; propertiesConfig[key].value;
             }
-        } */
-        //this._onChanges(changes.class.currentValue);
+        });
     }
 }</code></pre>
     </div>

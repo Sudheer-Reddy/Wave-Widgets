@@ -1,33 +1,41 @@
-import { Input, Output, ElementRef, OnChanges, OnInit } from "@angular/core";
+import { ElementRef } from "@angular/core";
 
-export class BaseWidget implements OnInit, OnChanges {
-    @Input() class;
-    private _el: ElementRef;
+export abstract class BaseWidget {
+    
+    /**
+     * Reference of the component selector
+     * @property {ElementRef} _el
+     */
+    abstract readonly _el: ElementRef;
 
-    constructor (el: ElementRef) {
-        this._el = el;
+    /**
+     * Triggers whenever there is a change in boolean property.
+     * @function toggleProperty
+     * @param {string} propertyName  Name of the property.
+     * @param {boolean} propertyVal  Name of the property.
+     * @param {string} selector Selector on which the property needs to be toggled.
+     */
+    toggleBooleanProperty(propertyName: string, propertyVal: boolean, selector: string): void {
+        let $el = this._el.nativeElement.querySelector(selector);
+
+        if ($el) {
+            $el[propertyName] = propertyVal;
+        }
     }
 
-    ngOnInit() {}
+    /**
+     * @function initWidget Initialization of widget happens here.
+     * @param {object} config Properties config of wiget.
+     */
+    initWidget(propertiesConfig: object) {
 
-    _onChanges(change) {};
-
-    ngOnChanges(changes) {
-        /* if (changes.class) {
-            let prevVal: string  = changes.class.previousValue,
-                newVal: string   = changes.class.currentValue,
-                classExp: string = this._el.nativeElement.getAttribute('class');
-
-
-            if (prevVal) {
-                let regExp: RegExp = new RegExp(prevVal);
-                newVal = classExp.replace(regExp, newVal);
-
-                console.log(newVal);
-            } else {
-                this._el.nativeElement.setAttribute('class', (classExp ? (classExp + ' ') : '') + this.class)
+        //Assign defualt values from config to component properties
+        Object.getOwnPropertyNames(propertiesConfig)
+        .map((key) => {
+            let val = propertiesConfig[key].value;
+            if (this[key] === undefined && val) {
+                this[key] = propertiesConfig[key].value;
             }
-        } */
-        //this._onChanges(changes.class.currentValue);
+        });
     }
 }

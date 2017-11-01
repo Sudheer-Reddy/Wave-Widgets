@@ -1,31 +1,33 @@
-import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from '@angular/core';
-import { BooleanProperty } from '../core/booleanproperty.class';
+import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges, AfterViewInit } from '@angular/core';
+import { BaseWidget } from '../core/basewidget.class';
+import { WidgetTypes } from '../../enums/helpers.enums';
+import { BaseConfig } from '../../services/baseconfig.service';
 
 @Component({
     'selector': 'wm-audio',
     'templateUrl': './audio.component.html',
-    'styleUrls': ['./audio.component.less']
+    'styleUrls': ['./audio.component.less'],
+    'providers': [BaseConfig]
 })
 
 
-export class Audio extends BooleanProperty implements OnChanges, OnInit {
+export class Audio extends BaseWidget implements OnChanges, OnInit, AfterViewInit {
     @Input() hint: string;
     @Input() class: string;
     @Input() hidden: boolean = true;
     @Input() mp3format: string;
-    @Input() audiosupportmessage: string = 'Your browser does not support the audio tag.';
+    @Input() audiosupportmessage: string;
     @Input() autoplay: boolean;
-    @Input() audiopreload: string = 'none';
+    @Input() audiopreload: string;
     @Input() tabindex: number = 0;
     @Input() showindevice: string;
     @Input() height: string;
     @Input() width: string;
     @Input() accessroles: string;
+    
+    private _selector: string = WidgetTypes[WidgetTypes.audio];
 
-    readonly _selector: string = 'audio';
-    readonly _el: ElementRef;
-
-    private _muted: boolean = true;
+    private _muted: boolean;
     /**
      * Gets loop attribute on audio widget
      * @type {boolean}
@@ -38,10 +40,11 @@ export class Audio extends BooleanProperty implements OnChanges, OnInit {
     /**
      * Sets loop attribute on audio widget
      * @type {boolean}
+     * @param {boolean} val value to be set
      */
     @Input('muted') 
     set muted(val: boolean) {
-        this.toggleProperty('muted', val);
+        this.toggleBooleanProperty('muted', val, this._selector);
         this._muted = val;
     };
 
@@ -61,7 +64,7 @@ export class Audio extends BooleanProperty implements OnChanges, OnInit {
      */
     @Input('loop') 
     set loop(val: boolean) {
-        this.toggleProperty('loop', val);
+        this.toggleBooleanProperty('loop', val, this._selector);
         this._loop = val;
     };
 
@@ -81,21 +84,20 @@ export class Audio extends BooleanProperty implements OnChanges, OnInit {
      */
     @Input('controls') 
     set controls(val: boolean) {
-        this.toggleProperty('controls', val);
+        this.toggleBooleanProperty('controls', val, this._selector);
         this._controls = val;
     };
 
 
+    /*** Life cylce Hooks ***/
+
     /**
      * @constructor 
-     * @param el ElementRef injection into constructor.
+     * @param {ElementRef} el Injection into constructor.
      */
-    constructor(el: ElementRef) {
+    constructor(readonly _el: ElementRef, private _config: BaseConfig) {
         super();
-        this._el = el;
     }
-
-    ngOnInit(): void {}
 
     /**
      * @function ngOnChanges Triggers whenever there is a change in @Input property
@@ -103,4 +105,10 @@ export class Audio extends BooleanProperty implements OnChanges, OnInit {
      * @returns no return value
      */
     ngOnChanges(changes: SimpleChanges): void {}
+
+    ngOnInit(): void {
+        this.initWidget(this._config.getDefaultValues('wm.audio') || {});
+    }
+
+    ngAfterViewInit(): void {}
 }
