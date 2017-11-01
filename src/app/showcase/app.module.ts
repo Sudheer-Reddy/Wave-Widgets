@@ -20,7 +20,7 @@ import { IconModule } from '../components/icon/icon.module';
     FormsModule,
     ButtonModule,
     AnchorModule,
-    IconModule
+    IconModule,
     FormsModule,
     AudioModule,
     LabelModule,
