@@ -1,0 +1,113 @@
+<div class="row clearfix">
+    <!-- Label widget Demo -->
+    <div class="col-sm-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <p>Label Widget</p>
+            </div>
+            <div class="panel-body">
+                <wm-label [caption]="labelCaption" [width]="captionWidth" [height]="captionHeight" [required]="'true'" [class]="labelClasses" [hidden]="!showLabel"></wm-label>
+
+                <h4>Properties</h4>
+                <p class="text-muted property"><span style="padding-right: 20px;">Caption</span></p><input [(ngModel)]="labelCaption" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Class</span></p><input [(ngModel)]="labelClasses" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Width</span></p><input [(ngModel)]="captionWidth" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Height</span></p><input [(ngModel)]="captionHeight" />
+            </div>
+        </div>
+    </div>
+    <!-- Audio widget Demo -->
+    <div class="col-sm-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <p>Audio Widget</p>
+            </div>
+            <div class="panel-body">
+                <wm-audio [controls]="showControls" [muted]="muteAudio" [loop]="enableLoop" [mp3format]="audioUrl" [width]="audioWidth" [height]="audioHeight"></wm-audio>
+
+                <h4>Properties</h4>
+                <p class="text-muted property"><span style="padding-right: 20px;">Mp3 Source</span></p><input [(ngModel)]="audioUrl" style="width: 300px;" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Width</span></p><input [(ngModel)]="audioWidth" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Height</span></p><input [(ngModel)]="audioHeight" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Controls</span></p><input type="checkbox" [(ngModel)]="showControls"/>
+                <p class="text-muted property"><span style="padding-right: 20px;">Loop</span></p><input type="checkbox" [(ngModel)]="enableLoop"/>
+                <p class="text-muted property"><span style="padding-right: 20px;">Mute</span></p><input type="checkbox" [(ngModel)]="muteAudio"/>
+            </div>
+        </div>
+    </div>
+    <!-- Picture widget Demo -->
+    <div class="col-sm-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <p>Picture Widget</p>
+            </div>
+            <div class="panel-body">
+                 <wm-picture shape="circle" [picturesource]="samplePicUrl" (onClick)="imageClicked($event)" [width]="pictureWidth" [height]="pictureHeight"></wm-picture>
+
+                 <h4>Properties</h4>
+                 <p class="text-muted property"><span style="padding-right: 20px;">Source</span></p><input [(ngModel)]="samplePicUrl" style="width: 300px;" />
+                 <p class="text-muted property"><span style="padding-right: 20px;">Width</span></p><input [(ngModel)]="pictureWidth" />
+                 <p class="text-muted property"><span style="padding-right: 20px;">Height</span></p><input [(ngModel)]="pictureHeight" />
+            </div>
+            <div class="panel-footer" *ngIf="imageData.length">
+                <p>Data Emitted:</p>
+
+                <p *ngFor="let data of imageData">{{data}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row clearfix">
+    <!-- Button widget Demo -->
+    <div class="col-sm-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <p>Button Widget</p>
+            </div>
+            <div class="panel-body">
+                <wm-button [caption]="buttonCaption" [class]="buttonClasses" [iconclass]="buttonIconClass" [badgevalue]="buttonBadgeValue"></wm-button>
+
+                <h4>Properties</h4>
+                <p class="text-muted property"><span style="padding-right: 20px;">Caption</span></p><input [(ngModel)]="buttonCaption" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Class</span></p><input [(ngModel)]="buttonClasses" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Icon class</span></p><input [(ngModel)]="buttonIconClass" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Badge value</span></p><input [(ngModel)]="buttonBadgeValue" />
+            </div>
+        </div>
+    </div>
+    <!-- Anchor widget Demo -->
+    <div class="col-sm-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <p>Anchor Widget</p>
+            </div>
+            <div class="panel-body">
+                <wm-anchor [attr.caption]="anchorCaption" [hyperlink]="anchorLink" [target]="anchorTarget" [iconclass]="anchorIconClass"></wm-anchor>
+
+                <h4>Properties</h4>
+                <p class="text-muted property"><span style="padding-right: 20px;">Caption</span></p><input [(ngModel)]="anchorCaption" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Hyperlink</span></p><input [(ngModel)]="anchorLink" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Target</span></p><input [(ngModel)]="anchorTarget" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Icon class</span></p><input [(ngModel)]="anchorIconClass" />
+            </div>
+        </div>
+    </div>
+    <!-- Icon widget Demo -->
+    <div class="col-sm-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <p>Icon Widget</p>
+            </div>
+            <div class="panel-body">
+                <wm-icon [caption]="iconCaption" [iconposition]="iconPosition" [iconclass]="iconClass" [color]="iconColor" [iconsize]="iconSize"></wm-icon>
+
+                <h4>Properties</h4>
+                <p class="text-muted property"><span style="padding-right: 20px;">Caption</span></p><input [(ngModel)]="iconCaption" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Icon Position</span></p><input [(ngModel)]="iconPosition" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Class</span></p><input [(ngModel)]="iconClass" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Icon color</span></p><input [(ngModel)]="iconColor" />
+                <p class="text-muted property"><span style="padding-right: 20px;">Icon size</span></p><input [(ngModel)]="iconSize" />
+            </div>
+        </div>
+    </div>
+</div>
