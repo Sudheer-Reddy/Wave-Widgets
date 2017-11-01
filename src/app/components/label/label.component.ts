@@ -6,7 +6,7 @@ import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges 
     'styleUrls': ['./label.component.less']
 })
 
-export class Label implements OnChanges, OnInit {
+export class LabelComponent implements OnChanges, OnInit {
     @Input() hint: string;
     @Input() caption: string;
     @Input() width: string;

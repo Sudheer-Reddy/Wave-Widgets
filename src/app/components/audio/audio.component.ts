@@ -1,4 +1,4 @@
-import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from '@angular/core';
+import { NgModule, Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from '@angular/core';
 
 @Component({
     'selector': 'wm-audio',
@@ -7,13 +7,12 @@ import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges 
 })
 
 /**
- * @class Audio.
- * @typedef Audio Represents a Audio widget with options like loop, mute, mp3format also style with custom classes 
+ * @class AudioComponent.
+ * @typedef AudioComponent Represents a Audio widget with options like loop, mute, mp3format also style with custom classes 
  * @classdesc Represents a Audio widget with options like loop, mute, mp3format also style with custom classes
- * @extends BaseWidget
  * @implements {OnChanges, OnInit}
  */
-export class Audio  implements OnChanges, OnInit {
+export class AudioComponent  implements OnChanges, OnInit {
     /**
      * Sets title property on widget
      * @property {string}

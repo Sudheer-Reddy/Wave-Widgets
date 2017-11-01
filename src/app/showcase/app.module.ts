@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
-import { Label } from '../components/label/label.component';
-import { Audio } from '../components/audio/audio.component';
-import { Picture } from '../components/picture/picture.component';
+import { LabelModule } from '../components/label/label.module';
+import { AudioModule } from '../components/audio/audio.module';
+import { PictureModule } from '../components/picture/picture.module';
 import { Anchor } from '../components/anchor/anchor.component';
 import { Button } from '../components/button/button.component';
 import { Icon } from '../components/icon/icon.component';
@@ -14,16 +14,16 @@ import { Icon } from '../components/icon/icon.component';
 @NgModule({
   declarations: [
     AppComponent,
-    Label,
-    Audio,
-    Picture,
     Button,
     Icon,
     Anchor
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AudioModule,
+    LabelModule,
+    PictureModule
   ],
   providers: [],
   bootstrap: [AppComponent]

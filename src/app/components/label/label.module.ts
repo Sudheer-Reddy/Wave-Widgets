@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LabelComponent } from './label.component';
+
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: []
+  exports: [
+    LabelComponent
+  ],
+  declarations: [
+    LabelComponent
+  ]
 })
 export class LabelModule { }

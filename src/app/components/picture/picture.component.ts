@@ -6,7 +6,7 @@ import { Component, Input, Output, OnInit, OnChanges, EventEmitter } from '@angu
     'styleUrls': ['./picture.component.less']
 })
 
-export class Picture implements OnChanges, OnInit {
+export class PictureComponent implements OnChanges, OnInit {
     @Input() hint: string;
     @Input() class: string;
     @Input() hidden: boolean = true;
