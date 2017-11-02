@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "**/*-demo.component.ts",
+    "**/*-demo.module.ts",
+    "**/*-routing.module.ts",
+    "**/app.*.ts",
+    "**/home.*.ts"
+  ]
+}
