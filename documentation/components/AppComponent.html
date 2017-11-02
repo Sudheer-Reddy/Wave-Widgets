@@ -119,10 +119,16 @@
                                     <a href="../modules/LabelDemoModule.html" >LabelDemoModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/LabelDemoRoutingModule.html" >LabelDemoRoutingModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/LabelModule.html" >LabelModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/PictureDemoModule.html" >PictureDemoModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/PictureDemoRoutingModule.html" >PictureDemoRoutingModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/PictureModule.html" >PictureModule</a>
@@ -175,7 +181,13 @@
                                     <a href="../components/LabelComponent.html" >LabelComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/LabelDemoComponent.html" >LabelDemoComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/PictureComponent.html" >PictureComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PictureDemoComponent.html" >PictureDemoComponent</a>
                                 </li>
                         </ul>
                     </li>
@@ -194,6 +206,9 @@
                             >
                                 <li class="link">
                                     <a href="../classes/AppPage.html" >AppPage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Base.html" >Base</a>
                                 </li>
                         </ul>
                     </li>
@@ -339,10 +354,16 @@
                                            <a href="../modules/LabelDemoModule.html" >LabelDemoModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/LabelDemoRoutingModule.html" >LabelDemoRoutingModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/LabelModule.html" >LabelModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/PictureDemoModule.html" >PictureDemoModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/PictureDemoRoutingModule.html" >PictureDemoRoutingModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/PictureModule.html" >PictureModule</a>
@@ -395,7 +416,13 @@
                                            <a href="../components/LabelComponent.html" >LabelComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../components/LabelDemoComponent.html" >LabelDemoComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/PictureComponent.html" >PictureComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PictureDemoComponent.html" >PictureDemoComponent</a>
                                        </li>
                                </ul>
                            </li>
@@ -414,6 +441,9 @@
                    >
                                        <li class="link">
                                            <a href="../classes/AppPage.html" >AppPage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Base.html" >Base</a>
                                        </li>
                                </ul>
                            </li>
@@ -1776,23 +1806,12 @@ export class AppComponent {
           &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
           &lt;div class&#x3D;&quot;collapse navbar-collapse&quot; id&#x3D;&quot;bs-example-navbar-collapse-1&quot;&gt;
             &lt;ul class&#x3D;&quot;nav navbar-nav&quot;&gt;
-              &lt;li class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./audio&#x27;]&quot;&gt;Audio&lt;/a&gt; &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-              &lt;li class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./button&#x27;]&quot;&gt;Button&lt;/a&gt; &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-              &lt;li class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./anchor&#x27;]&quot;&gt;Anchor&lt;/a&gt; &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-              &lt;li class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./icon&#x27;]&quot;&gt;Icon&lt;/a&gt; &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
-              &lt;li class&#x3D;&quot;dropdown&quot;&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; role&#x3D;&quot;button&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;Dropdown &lt;span class&#x3D;&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-                &lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
-                  &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-                  &lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-                  &lt;li role&#x3D;&quot;separator&quot; class&#x3D;&quot;divider&quot;&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
+              &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./anchor&#x27;]&quot;&gt;Anchor &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./audio&#x27;]&quot;&gt;Audio &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./button&#x27;]&quot;&gt;Button &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./icon&#x27;]&quot;&gt;Icon &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./label&#x27;]&quot;&gt;Label &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;./picture&#x27;]&quot;&gt;Picture &lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
         &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
@@ -1824,8 +1843,8 @@ export class AppComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav class="navbar navbar-default">        <div class="container-fluid">          <!-- Brand and toggle get grouped for better mobile display -->          <div class="navbar-header">            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">              <span class="sr-only">Toggle navigation</span>              <span class="icon-bar"></span>              <span class="icon-bar"></span>              <span class="icon-bar"></span>            </button>            <a class="navbar-brand" href="#">Wave Components</a>          </div>                <!-- Collect the nav links, forms, and other content for toggling -->          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            <ul class="nav navbar-nav">              <li class="active"><a href="#"><a [routerLink]="[\'./audio\']">Audio</a> <span class="sr-only">(current)</span></a></li>              <li class="active"><a href="#"><a [routerLink]="[\'./button\']">Button</a> <span class="sr-only">(current)</span></a></li>              <li class="active"><a href="#"><a [routerLink]="[\'./anchor\']">Anchor</a> <span class="sr-only">(current)</span></a></li>              <li class="active"><a href="#"><a [routerLink]="[\'./icon\']">Icon</a> <span class="sr-only">(current)</span></a></li>              <li><a href="#">Link</a></li>              <li class="dropdown">                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>                <ul class="dropdown-menu">                  <li><a href="#">Action</a></li>                  <li><a href="#">Another action</a></li>                  <li><a href="#">Something else here</a></li>                  <li role="separator" class="divider"></li>                  <li><a href="#">Separated link</a></li>                  <li role="separator" class="divider"></li>                  <li><a href="#">One more separated link</a></li>                </ul>              </li>            </ul>          </div><!-- /.navbar-collapse -->        </div><!-- /.container-fluid -->      </nav><router-outlet></router-outlet></div>'
-    var COMPONENTS = [{'name': 'AnchorComponent', 'selector': 'wm-anchor'},{'name': 'AnchorDemoComponent', 'selector': 'app-anchor-demo'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AudioComponent', 'selector': 'wm-audio'},{'name': 'AudioDemoComponent', 'selector': 'app-audio-demo'},{'name': 'ButtonComponent', 'selector': 'wm-button'},{'name': 'ButtonDemoComponent', 'selector': 'app-button-demo'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IconComponent', 'selector': 'wm-icon'},{'name': 'IconDemoComponent', 'selector': 'app-icon-demo'},{'name': 'LabelComponent', 'selector': 'wm-label'},{'name': 'PictureComponent', 'selector': 'wm-picture'}];
+        var COMPONENT_TEMPLATE = '<div><nav class="navbar navbar-default">        <div class="container-fluid">          <!-- Brand and toggle get grouped for better mobile display -->          <div class="navbar-header">            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">              <span class="sr-only">Toggle navigation</span>              <span class="icon-bar"></span>              <span class="icon-bar"></span>              <span class="icon-bar"></span>            </button>            <a class="navbar-brand" href="#">Wave Components</a>          </div>                <!-- Collect the nav links, forms, and other content for toggling -->          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            <ul class="nav navbar-nav">              <li><a [routerLink]="[\'./anchor\']">Anchor <span class="sr-only">(current)</span></a></li>              <li><a [routerLink]="[\'./audio\']">Audio <span class="sr-only">(current)</span></a></li>              <li><a [routerLink]="[\'./button\']">Button <span class="sr-only">(current)</span></a></li>              <li><a [routerLink]="[\'./icon\']">Icon <span class="sr-only">(current)</span></a></li>              <li><a [routerLink]="[\'./label\']">Label <span class="sr-only">(current)</span></a></li>              <li><a [routerLink]="[\'./picture\']">Picture <span class="sr-only">(current)</span></a></li>            </ul>          </div><!-- /.navbar-collapse -->        </div><!-- /.container-fluid -->      </nav><router-outlet></router-outlet></div>'
+    var COMPONENTS = [{'name': 'AnchorComponent', 'selector': 'wm-anchor'},{'name': 'AnchorDemoComponent', 'selector': 'app-anchor-demo'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AudioComponent', 'selector': 'wm-audio'},{'name': 'AudioDemoComponent', 'selector': 'app-audio-demo'},{'name': 'ButtonComponent', 'selector': 'wm-button'},{'name': 'ButtonDemoComponent', 'selector': 'app-button-demo'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'IconComponent', 'selector': 'wm-icon'},{'name': 'IconDemoComponent', 'selector': 'app-icon-demo'},{'name': 'LabelComponent', 'selector': 'wm-label'},{'name': 'LabelDemoComponent', 'selector': 'app-label-demo'},{'name': 'PictureComponent', 'selector': 'wm-picture'},{'name': 'PictureDemoComponent', 'selector': 'app-picture-demo'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

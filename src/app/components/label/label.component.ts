@@ -1,11 +1,13 @@
 import { Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from '@angular/core';
 
+/**
+ * Represents a label tag in DOM.
+ */
 @Component({
     'selector': 'wm-label',
     'templateUrl': './label.component.html',
     'styleUrls': ['./label.component.less']
 })
-
 export class LabelComponent implements OnChanges, OnInit {
 
     /* ---INPUT PROPERTIES--- */

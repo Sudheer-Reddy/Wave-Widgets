@@ -1,14 +1,13 @@
 import { NgModule, Component, Input, Output, OnInit, OnChanges, ElementRef, SimpleChanges } from '@angular/core';
 
+/**
+ * Represents a Audio widget with options like loop, mute, mp3format also style with custom classes
+ */
 @Component({
     'selector': 'wm-audio',
     'templateUrl': './audio.component.html',
     'styleUrls': ['./audio.component.less']
 })
-
-/**
- * Represents a Audio widget with options like loop, mute, mp3format also style with custom classes
- */
 export class AudioComponent  implements OnChanges, OnInit {
 
     /* ---INPUT PROPERTIES--- */

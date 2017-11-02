@@ -1,15 +1,24 @@
 import { Component, Input, Output, OnInit, OnChanges, EventEmitter, SimpleChanges } from '@angular/core';
 
+/**
+ * PictureComponent defines an image in an HTML page. <br>
+ * Supports certain properties like picturesource and few others.
+ */
 @Component({
     'selector': 'wm-picture',
     'templateUrl': './picture.component.html',
     'styleUrls': ['./picture.component.less']
 })
-
 export class PictureComponent implements OnChanges, OnInit {
 
      /* ---INPUT PROPERTIES--- */
 
+    /**
+     * This property controls the animation of the picture widget. <br>
+     * The animation is based on the css classes. <br>
+     * Possible values are `bounce`, `flash`, `pulse`, `rubberBand`, `shake`, `etc`.
+     */
+    @Input() animation: string;
     /**
      * Sets title on widget
      */
@@ -21,7 +30,13 @@ export class PictureComponent implements OnChanges, OnInit {
     @Input() class: string;
 
     /**
-     * Toggle widget show/hide state
+     * The cursor property specifies the type of cursor to be displayed when pointing on an element.
+     * Supported values are `default`, `pointer`, `none`, `move` etc..
+     */
+    @Input() cursor: string;
+
+    /**
+     * This property will be used to show/hide the picture widget on the web page.
      */
     @Input() show: boolean = true;
 
@@ -37,24 +52,24 @@ export class PictureComponent implements OnChanges, OnInit {
     @Input() showindevice: string;
 
     /**
-     * Sets component height expression
-     * suffix values with - 'px|%|em'
+     * Sets component height expression. <br>
+     * suffix values with - `px|%|em`
      */
     @Input() height: string;
 
     /**
-     * Sets component width expression
-     * suffix values with - 'px|%|em'
+     * Sets component width expression. <br>
+     * suffix values with - `px|%|em`
      */
     @Input() width: string;
 
     /**
-     * Sets source of image to be shown
+     * This property specifies the source for the picture
      */
     @Input() picturesource: string;
 
     /**
-     * Sets alt text for given image
+     * Sets default image for component
      */
     @Input() pictureplaceholder: string;
 
@@ -64,10 +79,24 @@ export class PictureComponent implements OnChanges, OnInit {
     @Input() encodeurl: boolean = false;
 
     /**
-     * Enable url encoding for image source
-     * Can be one of these 'none|H|V|Both'
+     * This property can automatically size an image to the height or width of the picture component. <br>
+     * Valid values are: <br>
+     * `None`: the image is displayed at its default size. <br>
+     * `H`: image is resized so that the width of the image is the same as the width of the picture component. <br>
+     * `V`: image is resized so that the height of the image is the same as the height of the picture component. <br>
+     * `Both`: image is resized so that the height and width of the image are same as the height and width of the picture component. <br>
      */
-    @Input() pictureaspect: string = 'none';
+    @Input() pictureaspect: string = 'None';
+
+    /**
+     * This property controls the shape of the picture. <br>
+     * Valid values are: <br>
+     * `None`: the image is displayed in its original shape. <br >
+     * `rounded`: adds rounded corners to an image. <br >
+     * `circle`: shapes the image to a circle. <br >
+     * `thumbnail`: shapes the image to a thumbnail.
+     */
+    @Input() shape: string = 'None';
 
     /**
      * Sets disable property on component
