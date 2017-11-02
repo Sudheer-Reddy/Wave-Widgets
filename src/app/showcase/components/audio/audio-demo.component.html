@@ -1,64 +1,68 @@
 <div class="panel panel-info">
   <div class="panel-body">
+    <!-- Controls property -->
     <div class="panel panel-info">
       <div class="panel-heading">
         <p>Controls</p>
       </div>
-        <div class="panel-body">
-          <div class="row clearfix">
-            <div class="col-sm-6 property-w">
-              <input type="checkbox" [(ngModel)]="controls" />
-            </div>
-            <div class="col-sm-6 component-w">
-              <wm-audio [controls]="controls" [mp3format]="mp3format"></wm-audio>
-            </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="checkbox" [(ngModel)]="controls" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-audio [controls]="controls" [mp3format]="mp3format"></wm-audio>
           </div>
         </div>
-    </div>
-    <div class="panel panel-info">
-        <div class="panel-heading">
-          <p>Loop</p>
-        </div>
-          <div class="panel-body">
-            <div class="row clearfix">
-              <div class="col-sm-6 property-w">
-                <input type="checkbox" [(ngModel)]="loop" />
-              </div>
-              <div class="col-sm-6 component-w">
-                <wm-audio [controls]="'controls'" [mp3format]="mp3format" [loop]="loop"></wm-audio>
-              </div>
-            </div>
-          </div>
       </div>
-      <div class="panel panel-info">
-          <div class="panel-heading">
-            <p>Muted</p>
+    </div>
+    <!-- Loop property -->
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Loop</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="checkbox" [(ngModel)]="loop" />
           </div>
-            <div class="panel-body">
-              <div class="row clearfix">
-                <div class="col-sm-6 property-w">
-                  <input type="checkbox" [(ngModel)]="muted" />
-                </div>
-                <div class="col-sm-6 component-w">
-                  <wm-audio [controls]="'controls'" [mp3format]="mp3format" [muted]="muted"></wm-audio>
-                </div>
-              </div>
-            </div>
+          <div class="col-sm-6 component-w">
+            <wm-audio [controls]="'controls'" [mp3format]="mp3format" [loop]="loop"></wm-audio>
+          </div>
         </div>
-        <div class="panel panel-info">
-            <div class="panel-heading">
-              <p>Mp3Format</p>
-            </div>
-              <div class="panel-body">
-                <div class="row clearfix">
-                  <div class="col-sm-6 property-w">
-                    <input style="width: 300px;" [(ngModel)]="mp3format" />
-                  </div>
-                  <div class="col-sm-6 component-w">
-                    <wm-audio [controls]="'controls'" [mp3format]="mp3format"></wm-audio>
-                  </div>
-                </div>
-              </div>
+      </div>
+    </div>
+    <!-- Muted property -->
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Muted</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input type="checkbox" [(ngModel)]="muted" />
           </div>
+          <div class="col-sm-6 component-w">
+            <wm-audio [controls]="'controls'" [mp3format]="mp3format" [muted]="muted"></wm-audio>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mp3 format property -->
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>Mp3Format</p>
+      </div>
+      <div class="panel-body">
+        <div class="row clearfix">
+          <div class="col-sm-6 property-w">
+            <input style="width: 300px;" [(ngModel)]="mp3format" />
+          </div>
+          <div class="col-sm-6 component-w">
+            <wm-audio [controls]="'controls'" [mp3format]="mp3format"></wm-audio>
+          </div>
+        </div>
+      </div>
+      </div>
   </div>
 </div>

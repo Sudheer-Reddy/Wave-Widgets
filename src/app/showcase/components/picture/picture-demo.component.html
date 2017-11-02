@@ -1,0 +1,52 @@
+<div class="panel panel-info">
+    <div class="panel-body">
+      <!-- Picturesource property -->
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <p>Picturesource</p>
+        </div>
+        <div class="panel-body">
+          <div class="row clearfix">
+            <div class="col-sm-6 property-w">
+              <input style="width: 300px;" [(ngModel)]="picturesource" />
+            </div>
+            <div class="col-sm-6 component-w">
+              <wm-picture [picturesource]="picturesource" [width]="'100px'" [height]="'100px'"></wm-picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Width property -->
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <p>Width</p>
+        </div>
+        <div class="panel-body">
+          <div class="row clearfix">
+            <div class="col-sm-6 property-w">
+              <input [(ngModel)]="width" />
+            </div>
+            <div class="col-sm-6 component-w">
+              <wm-picture [picturesource]="'https://angular.io/assets/images/logos/angular/angular.svg'" [width]="width" [height]="height"></wm-picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Height property -->
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <p>Height</p>
+        </div>
+        <div class="panel-body">
+          <div class="row clearfix">
+            <div class="col-sm-6 property-w">
+              <input [(ngModel)]="height" />
+            </div>
+            <div class="col-sm-6 component-w">
+              <wm-picture [picturesource]="'https://angular.io/assets/images/logos/angular/angular.svg'" [width]="width" [height]="height"></wm-picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -7,27 +7,73 @@ import { NgModule, Component, Input, Output, OnInit, OnChanges, ElementRef, Simp
 })
 
 /**
- * @class AudioComponent.
- * @typedef AudioComponent Represents a Audio widget with options like loop, mute, mp3format also style with custom classes 
- * @classdesc Represents a Audio widget with options like loop, mute, mp3format also style with custom classes
- * @implements {OnChanges, OnInit}
+ * Represents a Audio widget with options like loop, mute, mp3format also style with custom classes
  */
 export class AudioComponent  implements OnChanges, OnInit {
+
+    /* ---INPUT PROPERTIES--- */
+
     /**
-     * Sets title property on widget
-     * @property {string}
+     * Sets title on widget
      */
     @Input() hint: string;
+
+    /**
+     * Applies class expression on widget
+     */
     @Input() class: string;
-    @Input() hidden: boolean = true;
+
+    /**
+     * Toggle widget show/hide state
+     */
+    @Input() show: boolean = true;
+
+    /**
+     * Sets mp3 source for component
+     */
     @Input() mp3format: string;
+
+    /**
+     * Sets custom message for no audio support for browser
+     */
     @Input() audiosupportmessage: string;
+
+    /**
+     * Toggles autoplay property on component
+     */
     @Input() autoplay: boolean;
+
+    /**
+     * Sets audiopreload property on component
+     */
     @Input() audiopreload: string;
+
+    /**
+     * Sets accessibility tabindex on widget
+     */
     @Input() tabindex: number = 0;
+
+    /**
+     * Sets Device expression on widget.
+     * Example expression to show up component in all devices - 'md sm xs lg'
+     */
     @Input() showindevice: string;
+
+    /**
+     * Sets component height expression
+     * suffix values with - 'px|%|em'
+     */
     @Input() height: string;
+
+    /**
+     * Sets component width expression
+     * suffix values with - 'px|%|em'
+     */
     @Input() width: string;
+
+    /**
+     * Sets accessroles on component
+     */
     @Input() accessroles: string;
     
     /**
@@ -98,23 +144,22 @@ export class AudioComponent  implements OnChanges, OnInit {
     };
 
 
-    /*** Life cylce Hooks ***/
+    /* ---LIFE CYCLE HOOKS--- */
 
     /**
-     * @constructor 
-     * @param {ElementRef} el Injection into constructor.
+     * Constructor - Perform initializations on properties 
+     * that are inherited from parent component/class
      */
-    constructor(readonly _el: ElementRef) {
-    }
-
+    constructor() {}
+    
     /**
-     * @function ngOnChanges Triggers whenever there is a change in @Input property
-     * @param changes @type {SimpleChanges}  map of changed properties.
-     * @returns no return value
+     * Use this to perform any additional customizations on change of each property
+     * @param changes Contains collection of SimpleChange of each property on component
      */
     ngOnChanges(changes: SimpleChanges): void {}
 
+    /**
+     * Use this to perform initialization stuff
+     */
     ngOnInit(): void {}
-
-    ngAfterViewInit(): void {}
 }
