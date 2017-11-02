@@ -24,6 +24,11 @@ export class IconComponent implements OnInit {
    */
   @Input() hint: string = '';
   /**
+   * Sets Device expression on widget.
+   * Example expression to show up component in all devices - 'md sm xs lg'
+   */
+  @Input() showindevice: string;
+  /**
    * Showing determines whether or not a component is visible. A page element that is not showing has its css display style set to none; 
    * it is still a part of the DOM model of the page, but no longer affects the layout of other components.
    */

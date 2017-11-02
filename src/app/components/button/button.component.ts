@@ -35,7 +35,7 @@ export class ButtonComponent implements OnInit {
      * The tabindex attribute specifies the tab order of an element. 
 	 * The value can range from 0 to 32767. Default is 0 and -1 makes the element non-focusable.
      */
-	@Input() tabindex: string;
+	@Input() tabindex: number;
 	/**
      * Showing determines whether or not a component is visible. A page element that is not showing has its css display style set to none; 
 	 * it is still a part of the DOM model of the page, but no longer affects the layout of other components.
@@ -50,6 +50,11 @@ export class ButtonComponent implements OnInit {
 	 * The way of accessing the shortcut key is varying in different browsers <br>Internet Explorer - [Alt] + shortcutkey, <br>Chrome - [Alt] + shortcutkey (Windows/Linux) [Control] [Alt] + shortcutkey (MAC),<br>Firefox - [Alt] [Shift] + shortcutkey (Windows/Linux) [Control] [Alt] + shortcutkey (MAC),<br>Safari - [Alt] + shortcutkey (Windows) [Control] [Alt] + shortcutkey (MAC).
      */
 	@Input() shortcutkey: string;
+	/**
+	 * Sets Device expression on widget.
+	 * Example expression to show up component in all devices - 'md sm xs lg'
+	 */
+	@Input() showindevice: string;
 	/**
      * Width for the button.
      */
@@ -91,11 +96,11 @@ export class ButtonComponent implements OnInit {
 	@Input() class: string = 'btn-default';
 
 	@Input() fontsize: string;
-	@Input() fontunit: string; 
-	@Input() fontfamily: string; 
-	@Input() color: string; 
-	@Input() fontstyle: string; 
-	@Input() textalign: string; 
+	@Input() fontunit: string;
+	@Input() fontfamily: string;
+	@Input() color: string;
+	@Input() fontstyle: string;
+	@Input() textalign: string;
 	@Input() backgroundcolor: string;
 	@Input() backgroundimage: string = '';
 	@Input() backgroundrepeat: string;
