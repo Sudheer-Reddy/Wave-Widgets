@@ -95,22 +95,73 @@ export class ButtonComponent implements OnInit {
      */
 	@Input() class: string = 'btn-default';
 
-	@Input() fontsize: string;
+	/**
+	 * This property defines the font-size style attribute for the widget.
+	 */
+	@Input() fontsize: number;
+	/**
+	 * This property defines the font-unit style attribute for the widget. Units for the font can be specified as either px or em.
+	 */
 	@Input() fontunit: string;
+	/**
+	 * This property defines the font-family style attribute for the widget.
+	 */
 	@Input() fontfamily: string;
+	/**
+	 * Change the color style attribute of the widget using this property.
+	 */
 	@Input() color: string;
+	/**
+	 * This property defines the font-style style attribute for the widget.
+	 */
 	@Input() fontstyle: string;
+	/**
+	 * This property defines the text-align style attribute for the widget. Values can be left, center or right.
+	 */
 	@Input() textalign: string;
+	/**
+	 * This property defines the background color style attribute for the widget.
+	 */
 	@Input() backgroundcolor: string;
+	/**
+	 * User has following options to set backgroundImage \r\n 1) Direct image name with extension \r\n 2) Direct valid web url to the image \r\n 3) path to the image in the project directory, ex:resources/images/imagelists/example.png \r\n 4) url(imageName with extension) or url('imageName with extension') or url(\"imageName with extension\").
+	 */
 	@Input() backgroundimage: string = '';
+	/**
+	 * Background can be repeated vertically/horizontally/both or can be set to no-repeat to not to repeat.
+	 */
 	@Input() backgroundrepeat: string;
+	/**
+	 * The background-position property sets the starting position of a background image. This can be given in 1. (x%, y%) \n 2. (xpos, ypos) \n 3. (left, top), (center, top) etc.
+	 */
 	@Input() backgroundposition: string;
+	/**
+	 * This property defines the background size style attribute for the widget.
+	 */
 	@Input() backgroundsize: string;
-	@Input() backgroundattachment;
+	/**
+	 * This property defines the background attachment attribute for the widget.
+	 */
+	@Input() backgroundattachment: string;
+	/**
+	 * This property defines the border color to be applied to the layer element.
+	 */
 	@Input() bordercolor: string;
+	/**
+	 * Changes the border style for this widget. Select any of the default options available.
+	 */
 	@Input() borderstyle: string;
+	/**
+	 * This property defines the border-width style attribute for the widget.
+	 */
 	@Input() borderwidth: string;
+	/**
+	 * Sets the padding in pixels for your widget. The padding for an object is inside of its border (the margin is outside the border).
+	 */
 	@Input() padding: string;
+	/**
+	 * Sets the margin in pixels for your widget. The margin for an object is outside of its border (the padding is inside the border).
+	 */
 	@Input() margin: string;
 
 	constructor() {
