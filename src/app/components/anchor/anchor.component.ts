@@ -23,7 +23,10 @@ export class AnchorComponent implements OnInit {
   */
   _hyperlink: string;
 
-
+  /**
+  * Name of the anchor.
+  */
+  @Input() name: string;
 	/**
    * Caption to be displayed on anchor.
    */
