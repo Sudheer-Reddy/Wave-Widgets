@@ -1,7 +1,7 @@
 import { Component, OnInit, EventEmitter, Output, Input, SimpleChanges } from '@angular/core';
 
 @Component({
-  selector: 'app-checkbox',
+  selector: 'wm-checkbox',
   templateUrl: './checkbox.component.html',
   styleUrls: ['./checkbox.component.less']
 })
@@ -62,6 +62,10 @@ export class CheckboxComponent implements OnInit {
        * color for the checkbox.
        */
     @Input() color: string;
+    /**
+       * hint for the checkbox.
+       */
+    @Input() hint: string;
     /**
        * datavalue for the checkbox.
        */

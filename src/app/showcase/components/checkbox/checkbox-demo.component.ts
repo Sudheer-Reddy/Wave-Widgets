@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckboxDemoComponent implements OnInit {
 
+  datavalue: boolean = true;
+  
+  color: string = '#121212';
+
+  show: boolean = true;
+
+  width: string = '300px';
+
+  height: string = '100px';
+  
   constructor() { }
 
   ngOnInit() {

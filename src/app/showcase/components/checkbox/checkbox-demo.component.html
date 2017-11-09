@@ -1,3 +1,155 @@
-<p>
-  checkbox-demo works!
-</p>
+<div class="col-sm-8 component-props">
+  
+      <div class="panel panel-info">
+          <div class="panel-body">
+              <div class="panel panel-info">
+                  <div class="panel-heading">
+                      <p>Data Properties</p>
+                  </div>
+                  <div class="panel-body">
+                      <div class="row clearfix">
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-6 property-label">
+                                  <span>Data Value</span>
+                              </div>
+                              <div class="col-sm-6 property-value">
+                                <input type="checkbox" [(ngModel)]="datavalue">
+                              </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="panel-body">
+              <div class="panel panel-info">
+                  <div class="panel-heading">
+                      <p>Behavior Properties</p>
+                  </div>
+                  <div class="panel-body">
+                      <div class="row clearfix">
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-6 property-label">
+                                  <span>Required</span>
+                              </div>
+                              <div class="col-sm-6 property-value">
+                                  <input type="checkbox" [(ngModel)]="required">
+                              </div>
+                          </div>
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-6 property-label">
+                                  <span>Disable</span>
+                              </div>
+                              <div class="col-sm-6 property-value">
+                                  <input type="checkbox" [(ngModel)]="disable">
+                              </div>
+                          </div>
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-6 property-label">
+                                  <span>Show</span>
+                              </div>
+                              <div class="col-sm-6 property-value">
+                                  <input type="checkbox" [(ngModel)]="show">
+                              </div>
+                          </div>
+                          <div class="col-sm-6 property">
+                            <div class="col-sm-6 property-label">
+                                <span>Read Only</span>
+                            </div>
+                            <div class="col-sm-6 property-value">
+                                <input type="checkbox" [(ngModel)]="readonly">
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="panel-body">
+              <div class="panel panel-info">
+                  <div class="panel-heading">
+                      <p>Accessibility Properties</p>
+                  </div>
+                  <div class="panel-body">
+                      <div class="row clearfix">
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-3 property-label">
+                                  <span>Hint</span>
+                              </div>
+                              <div class="col-sm-9 property-value">
+                                  <input type="text" [(ngModel)]="hint">
+                              </div>
+                          </div>
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-3 property-label">
+                                  <span>Tab Index</span>
+                              </div>
+                              <div class="col-sm-9 property-value">
+                                  <input type="number" [(ngModel)]="tabindex">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="panel-body">
+              <div class="panel panel-info">
+                  <div class="panel-heading">
+                      <p>Layout Properties</p>
+                  </div>
+                  <div class="panel-body">
+                      <div class="row clearfix">
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-3 property-label">
+                                  <span>Width</span>
+                              </div>
+                              <div class="col-sm-9 property-value">
+                                  <input type="text" [(ngModel)]="width">
+                              </div>
+                          </div>
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-3 property-label">
+                                  <span>Height</span>
+                              </div>
+                              <div class="col-sm-9 property-value">
+                                  <input type="text" [(ngModel)]="height">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="panel-body">
+              <div class="panel panel-info">
+                  <div class="panel-heading">
+                      <p>Style Properties</p>
+                  </div>
+                  <div class="panel-body">
+                      <div class="row clearfix">
+                          <div class="col-sm-6 property">
+                              <div class="col-sm-3 property-label">
+                                  <span>Color</span>
+                              </div>
+                              <div class="col-sm-9 property-value">
+                                  <input type="text" [(ngModel)]="color">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+  <div class="col-sm-4 component-result">
+      <wm-checkbox
+              [width]="width"
+              [required]="required"
+              [disable]="disable"
+              [width]="width"
+              [height]="height"
+              [hint]="hint"
+              [tabindex]="tabindex"
+              [color]="color"
+              [show]="show"
+              [readonly]="readonly"
+              [(datavalue)]="datavalue"></wm-checkbox>
+  </div>

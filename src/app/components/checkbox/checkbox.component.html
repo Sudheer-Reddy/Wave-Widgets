@@ -1,5 +1,5 @@
 <div
-class="app-checkbox checkbox"
+class="app-checkbox"
 [ngClass]="{'app-toggle': type === 'toggle'}"
 >
 <label>
@@ -8,8 +8,17 @@ class="app-checkbox checkbox"
     [(ngModel)]="model"
     [readOnly]="readonly"
     [required]="required"
-    [disabled]="disabled || readonly"
+    [disabled]="disable || readonly"
     [attr.accesskey]="shortcutkey"
+    [hidden]="!show"
+    [title]="hint"
+    [tabindex]="tabindex"
+    [ngStyle]="{
+      'width':width, 
+      'height':height,
+      'color': color,
+      'margin': margin
+      }"
   >
   <span [innerHtml]="caption"></span>
 </label>
