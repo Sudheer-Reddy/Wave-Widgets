@@ -1,0 +1,29 @@
+<input 
+[ngClass]="['app-textbox', class]"
+[type]="type" 
+[title]="hint" 
+[(ngModel)]= "datavalue" 
+[readOnly]="readonly" 
+[required]="required" 
+[disabled]="disable" 
+[tabindex]="tabindex"
+[hidden]="!show" 
+[placeholder]="placeholder" 
+[attr.maxlength]="maxchars"
+[step]="step"
+[tabindex]="tabindex"
+[autofocus]="autofocus"
+(change)="onChange($event)"
+[ngStyle]="{
+    'width':width, 
+    'height':height,
+    'font-size': fontsize+fontunit,
+    'font-family': fontfamily,
+    'color': color,
+    'font-style': fontstyle,
+    'text-align': textalign,
+    'font-weight': fontweight,
+    'background-color': backgroundcolor,
+    'margin': margin
+    }"
+>

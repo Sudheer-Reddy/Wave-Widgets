@@ -1,0 +1,202 @@
+<div class="col-sm-8 component-props">
+    
+        <div class="panel panel-info">
+            <div class="panel-body">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <p>Dataset Properties</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row clearfix">
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-6 property-label">
+                                    <span>Data Value</span>
+                                </div>
+                                <div class="col-sm-6 property-value">
+                                    <input type="text" [(ngModel)]="datavalue">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-6 property-label">
+                                    <span>Type</span>
+                                </div>
+                                <div class="col-sm-6 property-value">
+                                    <select [(ngModel)]="type">
+                                        <option *ngFor="let type of types" [value]="type.key">{{type.value}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <p>Behavior Properties</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row clearfix">
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-6 property-label">
+                                    <span>Required</span>
+                                </div>
+                                <div class="col-sm-6 property-value">
+                                    <input type="checkbox" [(ngModel)]="required">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-6 property-label">
+                                    <span>Disable</span>
+                                </div>
+                                <div class="col-sm-6 property-value">
+                                    <input type="checkbox" [(ngModel)]="disable">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-6 property-label">
+                                    <span>Show</span>
+                                </div>
+                                <div class="col-sm-6 property-value">
+                                    <input type="checkbox" [(ngModel)]="show">
+                                </div>
+                            </div>                            
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-6 property-label">
+                                    <span>Maximum Characters</span>
+                                </div>
+                                <div class="col-sm-6 property-value">
+                                    <input type="number" [(ngModel)]="maxchars">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <p>Accessibility Properties</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row clearfix">
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Hint</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="text" [(ngModel)]="hint">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Tab Index</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="number" [(ngModel)]="tabindex">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <p>Layout Properties</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row clearfix">
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Width</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="text" [(ngModel)]="width">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Height</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="text" [(ngModel)]="height">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <p>Style Properties</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row clearfix">
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Font Size</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="number" [(ngModel)]="fontsize">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Color</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="text" [(ngModel)]="color">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Font Style</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="text" [(ngModel)]="fontweight">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Text Align</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="text" [(ngModel)]="textalign">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 property">
+                                <div class="col-sm-3 property-label">
+                                    <span>Background Color</span>
+                                </div>
+                                <div class="col-sm-9 property-value">
+                                    <input type="color" [(ngModel)]="backgroundcolor">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="col-sm-4 component-result">
+        <wm-text
+                [required]="required"
+                [disable]="disable"
+                [width]="width"
+                [height]="height"
+                [hint]="hint"
+                [tabindex]="tabindex"
+                [fontsize]="fontsize"
+                [color]="color"
+                [show]="show"
+                [type]="type"
+                [maxchars]="maxchars"
+                [backgroundcolor]="backgroundcolor"
+                [textalign]="textalign"
+                [textalign]="textalign"
+                [(datavalue)]="datavalue"></wm-text>
+    </div>

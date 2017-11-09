@@ -11,6 +11,9 @@ import { AnchorModule } from '../components/anchor/anchor.module';
 import { IconModule } from '../components/icon/icon.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { TextModule } from '../components/text/text.module';
+import { SelectModule } from '../components/select/select.module';
+import { CheckboxModule } from '../components/checkbox/checkbox.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { HomeComponent } from './components/home/home.component';
     IconModule,
     AudioModule,
     LabelModule,
-    PictureModule
+    PictureModule,
+    TextModule,
+    SelectModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

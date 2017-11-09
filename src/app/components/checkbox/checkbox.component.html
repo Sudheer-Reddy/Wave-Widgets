@@ -1,0 +1,17 @@
+<div
+class="app-checkbox checkbox"
+[ngClass]="{'app-toggle': type === 'toggle'}"
+>
+<label>
+  <input
+    type="checkbox"
+    [(ngModel)]="model"
+    [readOnly]="readonly"
+    [required]="required"
+    [disabled]="disabled || readonly"
+    [attr.accesskey]="shortcutkey"
+  >
+  <span [innerHtml]="caption"></span>
+</label>
+
+</div>

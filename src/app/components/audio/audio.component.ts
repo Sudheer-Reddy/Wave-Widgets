@@ -94,7 +94,7 @@ export class AudioComponent  implements OnChanges, OnInit {
     }
 
     /**
-     * Sets loop attribute on audio widget
+     * Sets muted attribute on audio widget
      * @type {boolean}
      * @param {boolean} val value to be set
      */
