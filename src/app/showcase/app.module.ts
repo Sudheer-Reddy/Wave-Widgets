@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { TextModule } from '../components/text/text.module';
 import { SelectModule } from '../components/select/select.module';
 import { CheckboxModule } from '../components/checkbox/checkbox.module';
+import { VideoModule } from '../components/video/video.module';
 
 @NgModule({
   declarations: [
@@ -23,16 +24,7 @@ import { CheckboxModule } from '../components/checkbox/checkbox.module';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
-    ButtonModule,
-    AnchorModule,
-    IconModule,
-    AudioModule,
-    LabelModule,
-    PictureModule,
-    TextModule,
-    SelectModule,
-    CheckboxModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

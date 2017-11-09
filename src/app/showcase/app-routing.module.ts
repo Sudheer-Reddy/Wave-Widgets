@@ -15,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
             {path: 'text', loadChildren: './components/text/text-demo.module#TextDemoModule'},
             {path: 'select', loadChildren: './components/select/select-demo.module#SelectDemoModule'},
             {path: 'checkbox', loadChildren: './components/checkbox/checkbox-demo.module#CheckboxDemoModule'},
+            {path: 'video', loadChildren: './components/video/video-demo.module#VideoDemoModule'},
         ])
     ],
     exports: [RouterModule]

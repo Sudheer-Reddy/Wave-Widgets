@@ -8,7 +8,7 @@ import { Component, OnInit, EventEmitter, Output, Input, SimpleChanges } from '@
 export class CheckboxComponent implements OnInit {
 
   /**
-     * Name of the text box.
+     * The name is a unique identifier for your component. Each page element and component must be uniquely identified.
      */
     @Input() name: string;
     /**
@@ -35,35 +35,35 @@ export class CheckboxComponent implements OnInit {
        */
     @Input() shortcutkey: string;
     /**
-       * Width for the text box.
+       * The width of your component can be specified in px or % (i.e 50px, 75%).
        */
     @Input() width: string;
     /**
-       * Height for the text box.
+       * The height of your component can be specified in px or % (i.e 50px, 75%).
        */
     @Input() height: string;
     /**
-       * autofocus for the text box.
+       * This property makes the element get focused automatically when the page loads.
        */
     @Input() autofocus: boolean;
     /**
-       * class for the text box.
+       * This property allows user to select one or more predefined class of style options from the view list drop down on the right.
        */
     @Input() class: string = '';
     /**
-       * readonly for the text box.
+       * On setting readonly property to true the user will not be able to change the data value of a component.
        */
     @Input() readonly: boolean = false;
     /**
-       * readonly for the text box.
+       * A required editor in forms may refuse to save without a required field.
        */
     @Input() required: boolean = false;
     /**
-       * color for the checkbox.
+       * Change the color style attribute of the component using this property.
        */
     @Input() color: string;
     /**
-       * hint for the checkbox.
+       * Any text enter for this property will be shown as a tooltip if the mouse hovers over this component for 1.5 seconds.
        */
     @Input() hint: string;
     /**

@@ -10,13 +10,13 @@ export class SelectComponent implements OnInit {
   /**
     * The name is a unique identifier for your component. Each page element and component must be uniquely identified.
     */
-    @Input() name: string;
+  @Input() name: string;
 
   /**
     * A placeholder is text to show in the editor when there is no value. 
     * This is a useful alternative to a caption if you are constrained in space and asking for something simple of the user.
     */
-    @Input() placeholder: string = '';
+  @Input() placeholder: string = '';
   /**
     * Any text enter for this property will be shown as a tooltip if the mouse hovers over this component for 1.5 seconds.
     */
@@ -79,7 +79,7 @@ export class SelectComponent implements OnInit {
   @Input() class: string = '';
 
   /**
-     * dataset for the select.
+     * Set this property to a variable to populate the list of values to display.
      */   
   @Input() dataset: any;
 
@@ -94,12 +94,12 @@ export class SelectComponent implements OnInit {
     @Input() displayfield: any;
 
     /**
-     * 
+     * unit for the font can be 'px', 'em' or '%'
      */   
     @Input() fontunit: string='px';
 
   /**
-     * 
+     * Change the color style attribute of the component using this property.
      */   
     @Input() color: string = 'black';
 
