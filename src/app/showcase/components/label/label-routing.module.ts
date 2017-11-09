@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LabelDemoComponent } from './label-demo.component';
 
-const routes: Routes = [];
+const routes: Routes = [{path:'', component: LabelDemoComponent}];
 
 @NgModule({
   imports: [RouterModule.forChild([

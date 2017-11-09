@@ -1,0 +1,23 @@
+<div class="app-html-container" 
+    [title]="hint"
+    [ngStyle]="{
+      'width':width, 
+      'height':height,
+      'font-size':fontsize+fontunit,
+      'font-family': fontfamily,
+      'color': color,
+      'font-style': fontstyle,
+      'text-align': textalign,
+      'background-color': backgroundcolor,
+      'background-image': backgroundimage ? 'url(' + backgroundimage + ')' : '',
+      'background-repeat': backgroundrepeat,
+      'background-position': backgroundposition,
+      'background-size': backgroundsize, 
+      'background-attachment': backgroundattachment,
+      'border-color': bordercolor,
+      'border-style': borderstyle,
+      'border-width': borderwidth,
+      'padding': padding,
+      'margin': margin}">
+  <ng-content></ng-content>
+</div>

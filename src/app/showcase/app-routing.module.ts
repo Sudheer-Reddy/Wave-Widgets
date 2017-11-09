@@ -16,6 +16,8 @@ import { HomeComponent } from './components/home/home.component';
             {path: 'select', loadChildren: './components/select/select-demo.module#SelectDemoModule'},
             {path: 'checkbox', loadChildren: './components/checkbox/checkbox-demo.module#CheckboxDemoModule'},
             {path: 'video', loadChildren: './components/video/video-demo.module#VideoDemoModule'},
+            {path: 'html', loadChildren: './components/html/html-demo.module#HtmlDemoModule'},
+            {path: 'message', loadChildren: './components/message/message-demo.module#MessageDemoModule'},
         ])
     ],
     exports: [RouterModule]
